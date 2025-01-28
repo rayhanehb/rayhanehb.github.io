@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oscilloscope Front-End Circuit Design
-date: 2025-01-27 12:00:00
+date: 2023-04-27 12:00:00
 description: Front-end design of an externally powered oscilloscope with 1x and 10x input modes, frequency attenuation, and AC/DC coupling.
 img: osc_pcb.png # Add image post (optional)
 fig-caption: Oscilloscope Front-End Circuit Design

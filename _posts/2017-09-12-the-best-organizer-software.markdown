@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autonomous Mini-Car with IR and Ultrasonic Navigation
-date: 2023-09-12 00:00:00 +0300
+date: 2023-04-12 00:00:00 +0300
 description: Autonomous Mini-Car with IR and Ultrasonic Navigation # Add post description (optional)
 img: bigbangracer.png # Add image post (optional)
 tags: [Robotics, Embedded Systems, C++]

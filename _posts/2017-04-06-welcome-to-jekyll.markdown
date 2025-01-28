@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GaitKeep - Biomedical Engineering Competition - 3rd Place
-date: 2025-01-27 12:00:00
+date: 2022-03-15 12:00:00
 description: Developed a prototype using Rhythmic Auditory Simulation to decrease gait variability in Parkinson's dementia patients.
 img: gaitkeep_app.png # Add image post (optional)
 fig-caption: GaitKeep Prototype for Parkinson's Dementia Patients

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Robotic Arm Motion Planning - 6-DOF KUKA Manipulator
-date: 2025-01-27 12:00:00
+date: 2024-11-27 12:00:00
 description: Design and implementation of forward and inverse kinematics for a 6-DOF KUKA manipulator, along with motion planning for obstacle avoidance.
 img: kuka.png # Add image post (optional)
 fig-caption: Robotic Arm Motion Planning with Obstacle Avoidance
