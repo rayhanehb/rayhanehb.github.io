@@ -18,7 +18,7 @@ This **ODE Particle Simulator** simulates the behavior of particles interacting 
 
 In addition to this ODE-based movement, particles are influenced by **repelling forces** from nearby obstacles, modeled using an inverse square law.
 
-<video width="100%" controls>
+<video width="90%" controls>
   <source src="{{site.baseurl}}/assets/img/ODE_eg1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
@@ -30,7 +30,7 @@ In addition to this ODE-based movement, particles are influenced by **repelling 
 
 
 <video width="30%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
+  <source src="{{site.baseurl}}/assets/img/ODE_eg4.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
