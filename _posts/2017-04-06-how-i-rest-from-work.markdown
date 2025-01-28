@@ -3,7 +3,7 @@ layout: post
 title: Mail Delivery Robot (Bayesian Localization)
 date: 2022-12-06 12:00:00
 description: TurtleBot3 Waffle Pi Bayes Localization
-img: tbotpath.png # Add image post (optional)
+img: trtlebot_prev.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [ROS, Localization, TurtleBot3]
 ---
@@ -21,7 +21,9 @@ This project involved designing a mail delivery system using the TurtleBot 3 Waf
 ## Simulation and Optimization
 - **MATLAB** and **Simulink** were utilized to model robot behavior before deploying the control and localization algorithms in ROS.
 - The system was designed to ensure reliable navigation even under challenging conditions, such as communication delays.
-![Probability Distrubution Change]({{site.baseurl}}/assets/img/bayepy.png)
+
+<img src="{{site.baseurl}}/assets/img/bayepy.png" alt="Probability Distrubution Change" style="width:40%;" />
+
 
 ## Key Features
 - Real-time probability-based localization for high-confidence stops.
@@ -35,8 +37,8 @@ This project demonstrated a robust approach to autonomous robot navigation, show
 - Algorithm design.
 - Real-world testing.
 
-![TurtleBot]({{site.baseurl}}/assets/img/tbotpath.png)
+\
 ![TurtleBot]({{site.baseurl}}/assets/img/trtlebot.jpg)
-
+<img src="{{site.baseurl}}/assets/img/tbotpath.png" alt="Simulation" style="width:40%;" />
 
 
