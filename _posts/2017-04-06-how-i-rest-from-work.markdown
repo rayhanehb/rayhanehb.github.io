@@ -16,6 +16,7 @@ This project involved designing a mail delivery system using the TurtleBot 3 Waf
 ## Localization
 - **Bayesian Localization** was applied to estimate the robot's position on a topological map, combining state prediction and measurement updates for accurate positioning.
 - **Extended Kalman Filter (EKF)** techniques were used to enhance precision.
+![Map]({{site.baseurl}}/assets/img/map.png)
 
 ## Simulation and Optimization
 - **MATLAB** and **Simulink** were utilized to model robot behavior before deploying the control and localization algorithms in ROS.
@@ -33,7 +34,7 @@ This project demonstrated a robust approach to autonomous robot navigation, show
 - Sensor integration.
 - Algorithm design.
 - Real-world testing.
-![Map]({{site.baseurl}}/assets/img/map.png)
+
 ![TurtleBot]({{site.baseurl}}/assets/img/tbotpath.png)
 ![TurtleBot]({{site.baseurl}}/assets/img/trtlebot.jpg)
 
