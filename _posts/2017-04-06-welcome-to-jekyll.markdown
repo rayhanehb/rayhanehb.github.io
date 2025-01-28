@@ -1,26 +1,37 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-date: 2017-04-06 13:32:20 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img:  # Add image post (optional)
+title: GaitKeep - Biomedical Engineering Competition - 3rd Place
+date: 2025-01-27 12:00:00
+description: Developed a prototype using Rhythmic Auditory Simulation to decrease gait variability in Parkinson's dementia patients.
+img: gaitkeep.png # Add image post (optional)
+fig-caption: GaitKeep Prototype for Parkinson's Dementia Patients
+tags: [Biomedical Engineering, Parkinson's, Prototype, MATLAB, Python]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+This project focused on decreasing gait variability in Parkinson's dementia patients through **Rhythmic Auditory Simulation** (RAS), a method shown to improve cadence in medical research.
+![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep_app.png)
 
-Jekyll also offers powerful support for code snippets:
+## Prototype Design
+- **GaitKeep** is a wearable necklace with a built-in speaker that plays calibrated rhythmic audio based on the user's walking cadence.
+- A mobile app was developed to **calibrate** the necklace by identifying the user's natural walking cadence through a short **100-step walking test**.
+![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep_diag.png)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Data Collection & Algorithm
+- **MATLAB** was used to collect accelerometer data from the user's phone to determine their optimal walking cadence.
+- A **Python BPM algorithm** and **discrete wavelength transform** were applied to match **music** with the user’s walking cadence, delivering the auditory stimulus needed to stabilize gait.
+![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep_graph.png)
+## Competition Results
+- The project was well-received at the **University of Toronto CUBE Biomedical Engineering Competition**, where it earned **3rd place**.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Key Features
+- Integration of **wearable technology** with real-time feedback.
+- Use of **MATLAB** for cadence analysis and **Python** for audio synchronization.
+- **Mobile app** that personalizes cadence and plays music tailored to individual users.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep-prototype.png)
+
+This project highlights:
+- Application of **Rhythmic Auditory Simulation** in medical devices.
+- Prototyping wearable technology.
+- Algorithm development for cadence tracking and music synchronization.
+

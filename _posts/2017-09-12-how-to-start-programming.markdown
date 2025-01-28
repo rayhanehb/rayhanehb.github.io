@@ -13,9 +13,10 @@ This project involved designing the front-end circuit and PCB layout for an exte
 
 ## Circuit Design
 - The circuit uses **low-pass filters**, **adders**, **buffers**, and **SPST switches** to implement the functionality of the oscilloscope front-end.
-![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_path.png)
 - **LTspice** simulations were conducted to validate the design before creating the PCB layout.
 - The low-pass filter was specifically designed using the **Analog Filter Wizard** to attenuate content frequencies above 20 kHz.
+![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_path.png)
+
 ![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_ltspice.png)
 
 
