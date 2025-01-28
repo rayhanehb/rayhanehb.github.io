@@ -38,5 +38,5 @@ This project demonstrated a robust approach to autonomous robot navigation, show
 ![TurtleBot]({{site.baseurl}}/assets/img/tbotpath.png)
 ![TurtleBot]({{site.baseurl}}/assets/img/trtlebot.jpg)
 
-![TurtleBot]({{site.baseurl}}/assets/img/linetracking.mp4)
+
 
