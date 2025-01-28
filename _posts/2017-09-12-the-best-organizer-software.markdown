@@ -3,7 +3,7 @@ layout: post
 title: Autonomous Mini-Car with IR and Ultrasonic Navigation
 date: 2023-04-12 00:00:00 +0300
 description: Autonomous Mini-Car with IR and Ultrasonic Navigation # Add post description (optional)
-img: bigbangracer.png # Add image post (optional)
+img: bigbangracer_header.png # Add image post (optional)
 tags: [Robotics, Embedded Systems, C++]
 ---
 
@@ -11,11 +11,12 @@ tags: [Robotics, Embedded Systems, C++]
 
 Developed an autonomous mini-car capable of line-following and obstacle avoidance using infrared (IR) and ultrasonic sensors. The car employs a "Fancy Bang-Bang" control algorithm for smooth navigation, overcoming motor limitations for precise control.
 
-## Watch the Demo
+#### Watch the Demo
 
 <a href="https://drive.google.com/file/d/1pAWdoWh57xi7_PDKFQFv4HTwq_o7ZNs3/view" target="_blank">
     <img src="{{site.baseurl}}/assets/img/bigbang_prev.png" alt="KUKA Obstacle Avoidance Path Planning" style="width:100%; max-width:600px; border: 1px solid #ddd; border-radius: 4px;">
 </a>
+
 
 ### Key Features
 
@@ -23,7 +24,18 @@ Developed an autonomous mini-car capable of line-following and obstacle avoidanc
 - **Obstacle Avoidance:** Incorporated ultrasonic sensors with a servo motor to detect objects in the path and autonomously navigate around them.
 - **C++ Implementation:** Wrote modular, efficient C++ code to integrate both the line-following and obstacle-avoidance features seamlessly.
 
+### How It Works
+
+1. **Sensor Integration:** The IR sensors track the line on the ground, while the ultrasonic sensor detects obstacles ahead, providing a real-time "point cloud" for navigation.
+
+<img src="{{site.baseurl}}/assets/img/bigbang_pointcloud.png" alt="Simulation" style="width:40%;" />
+
+2. **Control Algorithm:** The "Fancy Bang-Bang" algorithm adjusts motor speeds based on sensor inputs, allowing the car to navigate tight turns while avoiding obstacles.
+3. **Testing & Optimization:** Conducted thorough testing to minimize motor oscillations and fine-tune the system for real-world performance.
+
 ### Technical Overview
+
+<img src="{{site.baseurl}}/assets/img/bigbangracer.png" alt="Simulation" style="width:40%;" />
 
 1. **Sensor Polling:**  
    The system continuously polls the IR and ultrasonic sensors, collecting measurements for line checkpoints and object distance.
@@ -44,11 +56,6 @@ Developed an autonomous mini-car capable of line-following and obstacle avoidanc
    Control inputs are then sent to the servo and motors to adjust the vehicle’s movement according to the computed decisions.
 
 ---
-### How It Works
-
-1. **Sensor Integration:** The IR sensors track the line on the ground, while the ultrasonic sensor detects obstacles ahead, providing a real-time "point cloud" for navigation.
-2. **Control Algorithm:** The "Fancy Bang-Bang" algorithm adjusts motor speeds based on sensor inputs, allowing the car to navigate tight turns while avoiding obstacles.
-3. **Testing & Optimization:** Conducted thorough testing to minimize motor oscillations and fine-tune the system for real-world performance.
 
 ### Technologies Used
 
@@ -62,9 +69,8 @@ Developed an autonomous mini-car capable of line-following and obstacle avoidanc
 
 Successfully built and demonstrated an autonomous mini-car that can follow paths and avoid obstacles in real-time. This project showcases skills in embedded systems, sensor fusion, and efficient algorithm design.
 
-### Watch the Demo
-
-Check out the video of the autonomous mini-car in action: [Google Drive Video Link](https://drive.google.com/file/d/1pAWdoWh57xi7_PDKFQFv4HTwq_o7ZNs3/view)
-
+### Look at the Code!
+github link: [Big Bang Racer Code](https://github.com/rayhanehb/BigBangRacer/blob/main/BigBangRacer.cpp "Big Bang Racer Code")
+    
 
 
