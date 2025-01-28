@@ -9,7 +9,7 @@ tags: [Biomedical Engineering, Parkinson's, Prototype, MATLAB, Python]
 ---
 
 This project focused on decreasing gait variability in Parkinson's dementia patients through **Rhythmic Auditory Simulation** (RAS), a method shown to improve cadence in medical research.
-![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep_app.png)
+<!-- ![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep_app.png) -->
 
 ## Prototype Design
 - **GaitKeep** is a wearable necklace with a built-in speaker that plays calibrated rhythmic audio based on the user's walking cadence.
