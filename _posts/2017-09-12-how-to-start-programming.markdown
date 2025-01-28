@@ -31,12 +31,8 @@ This project involved designing the front-end circuit and PCB layout for an exte
 - The circuit was successfully simulated on **LTspice**, with accurate switching between the two input modes and correct AC/DC coupling behavior.
 - The design met the requirements for frequency attenuation and switching functionality.
 
-## Final Outcome
-- The design received a grade of **97%** for the assignment, demonstrating successful completion of the project.
-- The design ensures reliable oscilloscope performance and meets the specification requirements for input range switching and frequency attenuation.
 
-
-This project showcases expertise in:
+#### This project showcases expertise in:
 - Analog circuit design.
 - PCB layout using SMT.
 - Simulation and verification using LTspice.

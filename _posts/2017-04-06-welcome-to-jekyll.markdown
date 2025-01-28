@@ -28,7 +28,6 @@ This project focused on decreasing gait variability in Parkinson's dementia pati
 - Use of **MATLAB** for cadence analysis and **Python** for audio synchronization.
 - **Mobile app** that personalizes cadence and plays music tailored to individual users.
 
-![GaitKeep Prototype]({{site.baseurl}}/assets/img/gaitkeep-prototype.png)
 
 This project highlights:
 - Application of **Rhythmic Auditory Simulation** in medical devices.
