@@ -1,13 +1,45 @@
 ---
 layout: post
-title: Conference on Javascript
-date: 2017-09-10 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: js-1.png # Add image post (optional)
-tags: [Js, Conference] # add tag
+title: Robotic Arm Motion Planning - 6-DOF KUKA Manipulator
+date: 2025-01-27 12:00:00
+description: Design and implementation of forward and inverse kinematics for a 6-DOF KUKA manipulator, along with motion planning for obstacle avoidance.
+img: kuka.png # Add image post (optional)
+fig-caption: Robotic Arm Motion Planning with Obstacle Avoidance
+tags: [Robotics, Motion Planning, Kinematics, Obstacle Avoidance, Trajectory Optimization]
 ---
-Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&B forage wolf. Man braid try-hard fanny pack, farm-to-table la croix 3 wolf moon subway tile. Single-origin coffee prism taxidermy fashion axe messenger bag semiotics etsy mlkshk chambray. Marfa lumbersexual meditation celiac. Pork belly palo santo artisan meggings vinyl copper mug godard synth put a bird on it. Cloud bread pop-up quinoa, raw denim meditation 8-bit slow-carb. Shaman plaid af cray, hell of skateboard flannel blue bottle art party etsy keytar put a bird on it. Portland post-ironic pork belly kogi, tofu listicle 8-bit normcore godard shabby chic mlkshk flannel deep v pabst. Pork belly kinfolk fingerstache lo-fi raclette. Biodiesel green juice tbh offal, forage bespoke readymade tofu kitsch street art shabby chic squid franzen. Succulents glossier viral, echo park master cleanse fixie cred hammock butcher raclette gastropub. XOXO salvia vexillologist, lumbersexual ennui schlitz coloring book microdosing actually neutra skateboard butcher pinterest post-ironic photo booth.
 
-Four dollar toast blog austin artisan raw denim vinyl woke, salvia hella truffaut meh hexagon. Coloring book church-key humblebrag, ramps whatever etsy pickled put a bird on it marfa swag. Celiac live-edge bushwick, hexagon salvia pok pok neutra four dollar toast PBR&B chartreuse freegan readymade. Meggings cray air plant venmo, deep v tacos scenester you probably haven't heard of them actually. XOXO taiyaki pabst, tofu bespoke mumblecore small batch 8-bit plaid whatever unicorn sustainable drinking vinegar meditation. Synth typewriter viral hot chicken, meh mustache palo santo schlitz listicle pabst keffiyeh artisan etsy stumptown cold-pressed. Occupy locavore cray irony. Chambray whatever vaporware keffiyeh heirloom vice. Single-origin coffee neutra iPhone lyft. Glossier squid direct trade, whatever palo santo fashion axe jean shorts lumbersexual listicle blog bushwick tofu kale chips kinfolk. Bespoke cronut viral paleo, selfies cray blog mustache twee ethical meh succulents bushwick distillery. Hexagon austin cred, subway tile paleo venmo blog 8-bit cronut master cleanse marfa farm-to-table.
+This project involved designing and implementing forward and inverse kinematics for a **6-DOF KUKA industrial manipulator** and developing motion planning algorithms for obstacle avoidance. The system enables the robotic arm to perform automated tasks with precise control, tracing objects and navigating through obstacles.
 
-Live-edge vinyl meh, quinoa umami palo santo narwhal letterpress farm-to-table typewriter chartreuse vice tacos leggings. Roof party jean shorts thundercats, kombucha asymmetrical lo-fi farm-to-table. Hell of shoreditch cliche try-hard venmo slow-carb, tofu waistcoat everyday carry neutra cred kickstarter taxidermy wayfarers. Direct trade banh mi pug skateboard banjo edison bulb. Intelligentsia cliche quinoa synth umami. Trust fund four loko hoodie paleo cray tote bag slow-carb ennui. Williamsburg food truck intelligentsia trust fund. Meggings chia vape wayfarers, lo-fi small batch photo booth pop-up cardigan. Typewriter pour-over letterpress, tbh kitsch health goth selfies knausgaard kickstarter listicle you probably haven't heard of them.
+## Section 1: **Drawing with Inverse Kinematics**
+
+The robotic arm was tasked with **tracing a jug** using inverse kinematics. By solving the inverse kinematic equations, the arm successfully determined the joint angles required to move its end effector to each point along the jug’s outline.
+
+- **Forward Kinematics**: First, the position of the end effector was determined from the joint angles.
+- **Inverse Kinematics**: The arm solved for joint angles corresponding to a desired end effector position, allowing it to trace the outline of the jug precisely.
+
+![Robotic Arm Tracing Jug]({{site.baseurl}}/assets/img/kuka_jug.png)
+
+The algorithm ensured smooth motion and precise placement of the arm at each point along the jug’s outline, allowing for detailed tracing. The robotic arm adapted to each segment of the jug's curve, ensuring an accurate representation of the shape.
+
+## Section 2: **Obstacle Avoidance with Motion Planning**
+
+In addition to inverse kinematics, the project also included **motion planning** for **obstacle avoidance**. The robotic arm was programmed to navigate around obstacles while maintaining an optimized path to its destination. 
+
+- **Artificial Potential Fields (APF)** were implemented to generate safe, efficient paths. The attractive force guided the arm toward its target, while the repulsive force kept the arm away from obstacles.
+- The algorithm optimized the trajectory in real time, ensuring smooth motion while avoiding any interference with obstacles in the workspace.
+
+<!-- ![Obstacle Avoidance Path]({{site.baseurl}}/assets/img/robot_arm_obstacle.png) -->
+
+## Simulation Results
+- The system demonstrated successful **obstacle avoidance** during real-time simulations.
+- The robotic arm moved efficiently through a cluttered environment, adjusting its path as needed to avoid obstacles and reach the destination.
+
+## Final Outcome
+- The project successfully demonstrated the ability of the robotic arm to trace complex shapes using **inverse kinematics** and navigate through a workspace with **obstacle avoidance**.
+
+This project showcases expertise in:
+- **Kinematic modeling** for robotics.
+- **Motion planning algorithms** using artificial potential fields.
+- **Obstacle avoidance** and real-time trajectory optimization.
+
+<!-- ![Robotic Arm Final Path]({{site.baseurl}}/assets/img/robot_arm_final.png) -->
