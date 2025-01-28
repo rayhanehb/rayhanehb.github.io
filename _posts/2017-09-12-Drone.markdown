@@ -1,0 +1,41 @@
+---
+layout: post
+title: Drone Flight
+date: 2023-03-27 12:00:00
+description: Design and implementation of a drone flight controller and sensor fusion for stable and autonomous flight.
+img: osc_pcb_prev.png # Add image post (optional)
+fig-caption: Oscilloscope Front-End Circuit Design
+tags: [Oscilloscope, Circuit Design, PCB, Analog Filters]
+---
+
+This project involved assembling and configuring a drone using a CubePilot flight controller and Jetson Nano system for flight readiness and performance testing.
+
+
+<video width="90%" controls>
+  <source src="{{site.baseurl}}/assets/img/drone_flighttest1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+## Technical Specifications
+- **Frame:** Lightweight carbon fiber frame with four motors and ESCs.
+- **Flight:** Controller: CubePilot Orange Cube+ with PX4 autopilot firmware.
+- **Motors & ESCs:** Four brushless motors connected to ESCs.
+- **Remote Control:** Taranis Transmitter and Archer R4 receiver.
+- **Sensors:** TeraRanger EVO for distance measurements, integrated buzzer.
+- **Software:** PX4 firmware on the Cube+ and QGroundControl for setup and monitoring.
+- **Onboard Computer:** Jetson Nano for future image processing and autonomy.
+
+
+<img src="{{site.baseurl}}/assets/img/drone_header.png" alt="Osc LTSpice" style="width:40%;" />
+<img src="{{site.baseurl}}/assets/img/drone_closeup.png" alt="Osc LTSpice" style="width:40%;" />
+
+
+## Configuration Process
+Propeller Direction: Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
+<img src="{{site.baseurl}}/assets/img/drone_prooperllowdir.png" alt="Osc LTSpice" style="width:50%;" />
+
+
+## Project Results
+This section highlights the results from assembling and testing the drone.
+
