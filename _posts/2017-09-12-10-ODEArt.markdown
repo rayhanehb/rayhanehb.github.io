@@ -18,8 +18,24 @@ This **ODE Particle Simulator** simulates the behavior of particles interacting 
 
 In addition to this ODE-based movement, particles are influenced by **repelling forces** from nearby obstacles, modeled using an inverse square law.
 
-<video width="40%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg4.webm" type="video/webm">
+<video width="100%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<video width="30%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg6.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+<video width="30%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<video width="30%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg5.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -30,22 +46,6 @@ In addition to this ODE-based movement, particles are influenced by **repelling 
 - **Obstacle Interaction:** Particles interact with obstacles through a **repelling force**, dynamically adjusting their motion as they get closer.
 - **Real-time Visualization:** Particles' positions, velocities, and obstacles are continuously rendered and updated, providing an interactive visual experience.
 - **Fading Effect:** The simulation includes a fading effect that gradually reduces the intensity of previous frames, giving a smooth visualization of particle trajectories over time.
-
-<video width="100%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_ex1.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-
-<video width="30%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg2.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-
-
-<video width="30%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
 
 ### Technical Overview
 
@@ -64,9 +64,9 @@ The simulation works by solving ordinary differential equations (ODEs) to model 
    The velocity of each particle is updated based on the dynamics and repelling force, and the position is updated accordingly using the **Euler integration** method.
 
 <img src="{{site.baseurl}}/assets/img/ODE_pic1.png" alt="map" style="width:30%;" />
-<img src="{{site.baseurl}}/assets/img/ODE_pic2.png" alt="map" style="width:30%;" />
+<img src="{{site.baseurl}}/assets/img/ODE_header.png" alt="map" style="width:30%;" />
 <img src="{{site.baseurl}}/assets/img/ODE_pic3.png" alt="map" style="width:30%;" />
-<img src="{{site.baseurl}}/assets/img/ODE_pic4.png" alt="map" style="width:30%;" />
+
 
 ### Technologies Used
 
@@ -92,4 +92,4 @@ The simulation works by solving ordinary differential equations (ODEs) to model 
 
 The simulation successfully models and visualizes a dynamic system of particles influenced by **ODEs** and obstacles. The particles evolve according to the forces and can be observed interacting with each other and the environment in real-time.
 
-### Watch the Demo
+
