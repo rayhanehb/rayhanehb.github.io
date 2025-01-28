@@ -22,6 +22,14 @@ social-email: rayhaneh.behravesh@gmail.com # add your Email address
 # Tracker
 analytics: # Google Analytics
 
+jobs:
+  - title: "Robotics Research Student"
+    company: "SickKids Hospital"
+  - title: "Embedded Systems Developer Intern"
+    company: "Geotab"
+  - title: "Computational Analyst Researcher"
+    company: "University Health Network"
+
 # Build Settings
 markdown: kramdown
 plugins:

@@ -11,20 +11,16 @@ layout: default
       <div class="author-name">{{site.author}}</div>
       <p>{{site.about-author}}</p>
     </div>
-       <!-- Add the job section here -->
+      <!-- Add the job section here -->
     <section class="jobs">
-    <h3>Work Experience</h3>
-    <ul>
-      <li>
-        <p> Robotics Research Student | SickKids Hospital <p>
-      </li>
-      <li>
-        <p> Embedded Systems Developer Intern | Geotab<p>
-      </li>
-      <li>
-        <p> Computational Analyst Researcher | University Health Network <p>
-      </li>
-    </ul>
+      <h3>Work Experience</h3>
+      <ul>
+        {% for job in site.jobs %}
+          <li>
+            <p class="job-title">{{ job.title }} | {{ job.company }}</p>
+          </li>
+        {% endfor %}
+      </ul>
     </section> 
   </header> <!-- End Header -->
   <footer>
