@@ -3,10 +3,14 @@ layout: post
 title: ODE Particle Simulator
 date: 2024-10-12 00:00:00 +0300
 description: ODE Art Simulation # Add post description (optional)
-img: ODE_header.png # Add image post (optional)
+img: ODE_header2.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [ODE, Python, Art] # add tag
 ---
+<!-- Include MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 ### Overview
 
@@ -18,15 +22,11 @@ Mathematically, the particle dynamics are described by the equation:
 \dot{x} = A \cdot x
 \]
 
-Where:
-- \( \dot{x} \) is the change in position (velocity) over time.
-- \( A \) is a 2x2 matrix that governs the linear dynamics of the system.
-- \( x \) is the particle's position in the 2D space.
 
 In addition to this ODE-based movement, particles are influenced by **repelling forces** from nearby obstacles, modeled using an inverse square law.
 
-<video width="100%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg2.webm" type="video/webm">
+<video width="80%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -38,11 +38,15 @@ In addition to this ODE-based movement, particles are influenced by **repelling 
 - **Real-time Visualization:** Particles' positions, velocities, and obstacles are continuously rendered and updated, providing an interactive visual experience.
 - **Fading Effect:** The simulation includes a fading effect that gradually reduces the intensity of previous frames, giving a smooth visualization of particle trajectories over time.
 
-<video width="60%" controls>
+<video width="100%" controls>
   <source src="{{site.baseurl}}/assets/img/ODE_ex1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
+<video width="30%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 ### Technical Overview
 
