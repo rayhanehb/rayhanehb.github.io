@@ -1,0 +1,68 @@
+---
+layout: post
+title: ODE Particle Simulator
+date: 2024-10-12 00:00:00 +0300
+description: ODE Art Simulation # Add post description (optional)
+img: ODE_header.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [ODE, Python, Art] # add tag
+---
+
+### Overview
+
+This **ODE Particle Simulator** simulates the behavior of particles interacting with dynamic forces derived from **ordinary differential equations (ODEs)**. The particles evolve in a 2D space with custom dynamics and repelling forces, and obstacles are introduced to influence their trajectories. The simulation is visualized in real-time using **Pygame**, providing an interactive experience where users can observe the particles' motion and interactions.
+
+<video width="100%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_ex1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+### Key Features
+
+- **Particle Dynamics:** Particles are simulated under the influence of ODEs, with velocity and position updated at each step.
+- **Obstacle Interaction:** Particles interact with obstacles through a **repelling force**, dynamically adjusting their motion as they get closer.
+- **Real-time Visualization:** Particles' positions, velocities, and obstacles are continuously rendered and updated, providing an interactive visual experience.
+- **Fading Effect:** The simulation includes a fading effect that gradually reduces the intensity of previous frames, giving a smooth visualization of particle trajectories over time.
+
+### Technical Overview
+
+The simulation works by solving ordinary differential equations (ODEs) to model the dynamics of the particles. Here's a breakdown of the main components:
+
+1. **Particle Initialization:**
+   Each particle is randomly initialized within the simulation space, with a random position and velocity. The particles have a mass and can be reset after a certain age.
+
+2. **Dynamic Forces:**
+   Particles are subject to forces computed using the ODE function, `f(x) = Ax`. The particles are also influenced by repelling forces from nearby obstacles.
+
+3. **Repelling Force:**
+   The simulation computes a repelling force between particles and obstacles within a specific range, using an inverse square law for the force calculation.
+
+4. **Velocity and Position Update:**
+   The velocity of each particle is updated based on the dynamics and repelling force, and the position is updated accordingly using the **Euler integration** method.
+
+### Technologies Used
+
+- **Pygame**: For real-time rendering and simulation of particle motion.
+- **NumPy**: For mathematical operations and efficient handling of arrays and matrices.
+- **Python**: The simulation is written in Python, utilizing Pygame for graphics and NumPy for computational efficiency.
+
+### How It Works
+
+1. **Particle Initialization**: 
+   The particles are initialized randomly within the space, with their positions and velocities sampled from a normal distribution.
+
+2. **Force Calculation**: 
+   The **f(x)** function models the motion of the particles under the influence of linear dynamics (using a 2x2 matrix). The repelling force from obstacles is calculated and applied to the particles based on their proximity to the obstacles.
+
+3. **Real-Time Update**: 
+   Each particle's position and velocity are updated at each timestep. The simulation runs continuously and visualizes the movement and interactions between particles and obstacles.
+
+4. **Visualization**: 
+   Pygame is used to display the particles and obstacles. The positions are rendered as circles, and a fading effect is applied to the background to smooth the motion of the particles.
+
+### Results
+
+The simulation successfully models and visualizes a dynamic system of particles influenced by **ODEs** and obstacles. The particles evolve according to the forces and can be observed interacting with each other and the environment in real-time.
+
+### Watch the Demo
