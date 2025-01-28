@@ -35,7 +35,7 @@ In addition to inverse kinematics, the project also included **motion planning**
 - The system demonstrated successful **obstacle avoidance** during real-time simulations.
 - The robotic arm moved efficiently through a cluttered environment, adjusting its path as needed to avoid obstacles and reach the destination.
 
-<img src="{{site.baseurl}}/assets/img/kuka_sim1.png" alt="Simulation" style="width:50%;" />
+<img src="{{site.baseurl}}/assets/img/kuka_sim3.png" alt="Simulation" style="width:50%;" />
 
 
 ## Final Outcome
