@@ -28,13 +28,15 @@ In addition to inverse kinematics, the project also included **motion planning**
 - **Artificial Potential Fields (APF)** were implemented to generate safe, efficient paths. The attractive force guided the arm toward its target, while the repulsive force kept the arm away from obstacles.
 - The algorithm optimized the trajectory in real time, ensuring smooth motion while avoiding any interference with obstacles in the workspace.
 
-![Obstacle Avoidance Path]({{site.baseurl}}/assets/img/kuka_potfield_diag.png)
+<img src="{{site.baseurl}}/assets/img/kuka_potfield_diag.png" alt="Simulation" style="width:40%;" />
+
 
 ## Simulation Results
 - The system demonstrated successful **obstacle avoidance** during real-time simulations.
 - The robotic arm moved efficiently through a cluttered environment, adjusting its path as needed to avoid obstacles and reach the destination.
 
-![Simulation]({{site.baseurl}}/assets/img/kuka_sim1.png)
+<img src="{{site.baseurl}}/assets/img/kuka_sim1.png" alt="Simulation" style="width:50%;" />
+
 
 ## Final Outcome
 - The project successfully demonstrated the ability of the robotic arm to trace complex shapes using **inverse kinematics** and navigate through a workspace with **obstacle avoidance**.
