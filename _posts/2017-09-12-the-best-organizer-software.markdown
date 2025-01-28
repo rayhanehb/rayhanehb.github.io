@@ -1,22 +1,61 @@
 ---
 layout: post
-title: The Best Organizer Software
-date: 2017-09-12 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: software.jpg # Add image post (optional)
-tags: [Productivity, Software] # add tag
+title: Autonomous Mini-Car with IR and Ultrasonic Navigation
+date: 2023-09-12 00:00:00 +0300
+description: Autonomous Mini-Car with IR and Ultrasonic Navigation # Add post description (optional)
+img: bigbangracer.png # Add image post (optional)
+tags: [Robotics, Embedded Systems, C++]
 ---
 
-Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh XOXO butcher cardigan authentic organic letterpress. Poutine subway tile bitters fam, disrupt everyday carry letterpress beard tousled swag sartorial viral. Retro af 3 wolf moon heirloom, pork belly man bun DIY chillwave. Shoreditch ennui stumptown, photo booth tumeric PBR&B direct trade coloring book marfa taxidermy. Gentrify brunch typewriter woke freegan. Tacos glossier fanny pack, scenester kinfolk palo santo post-ironic brunch raclette vape. Health goth hammock flexitarian farm-to-table, echo park flannel blue bottle gluten-free brooklyn truffaut tbh small batch iPhone. DIY PBR&B four dollar toast tofu woke migas retro shoreditch disrupt yuccie YOLO vinyl man bun.
+### Overview
 
-### Church-key blog messenger bag
+Developed an autonomous mini-car capable of line-following and obstacle avoidance using infrared (IR) and ultrasonic sensors. The car employs a "Fancy Bang-Bang" control algorithm for smooth navigation, overcoming motor limitations for precise control.
 
-Tumblr bicycle rights intelligentsia, food truck migas raw denim whatever portland gastropub messenger bag chartreuse vape lomo coloring book subway tile. Yr pabst meggings tattooed four dollar toast. Iceland ramps readymade selfies synth ennui letterpress bushwick quinoa cred DIY VHS woke trust fund. Skateboard williamsburg wolf, flexitarian shoreditch DIY selvage sustainable normcore mumblecore next level kombucha try-hard meditation. Gentrify plaid microdosing, master cleanse ugh crucifix pop-up. Wolf bushwick street art tumeric. Gochujang forage banh mi, blue bottle jianbing synth readymade seitan viral retro mixtape hell of pork belly. Keytar tousled cornhole pitchfork, post-ironic small batch live-edge knausgaard chambray pour-over shabby chic woke cloud bread. Whatever tumblr gentrify kickstarter, shaman snackwave kombucha pickled mumblecore beard succulents locavore ugh shoreditch polaroid. Wayfarers crucifix tattooed twee. Yr listicle crucifix fingerstache farm-to-table. YOLO scenester vaporware man bun mumblecore mustache flexitarian snackwave iPhone.
+### Key Features
 
-Hella lo-fi banjo, disrupt tofu prism raclette. Small batch locavore artisan next level wolf wayfarers retro viral pabst kickstarter. Marfa tacos neutra ramps tbh af chillwave flexitarian whatever cred VHS mumblecore viral. Hell of retro vegan chambray tacos VHS four dollar toast tote bag. Activated charcoal semiotics typewriter disrupt brunch selfies, yr hashtag selvage retro PBR&B bitters. Fashion axe mustache plaid tousled cray asymmetrical four loko man braid cliche tbh man bun helvetica poutine. Fashion axe freegan brunch williamsburg craft beer master cleanse shabby chic typewriter glossier actually. Plaid tumblr hexagon neutra slow-carb mumblecore. Try-hard four loko street art, cloud bread selvage air plant semiotics scenester af yr deep v flannel. Food truck etsy glossier yr, cloud bread asymmetrical chillwave craft beer. Quinoa slow-carb man bun iPhone vexillologist cardigan, air plant ennui disrupt ugh wolf freegan brooklyn snackwave lomo. Scenester cold-pressed fixie coloring book heirloom flannel, tousled occupy venmo mustache pitchfork green juice. VHS neutra 8-bit roof party. Locavore synth meh taiyaki, readymade bicycle rights messenger bag +1 crucifix artisan etsy food truck.
+- **Line Following:** Utilized IR sensors to detect the track and applied the "Fancy Bang-Bang" algorithm to adjust motor speeds for smooth turns and transitions.
+- **Obstacle Avoidance:** Incorporated ultrasonic sensors with a servo motor to detect objects in the path and autonomously navigate around them.
+- **C++ Implementation:** Wrote modular, efficient C++ code to integrate both the line-following and obstacle-avoidance features seamlessly.
 
-### Pour-over blue bottle woke listicle
+### Technical Overview
 
-Pour-over blue bottle woke listicle, pitchfork 90's post-ironic scenester poutine ennui four loko ramps kickstarter. Williamsburg food truck pop-up locavore, umami cloud bread twee squid fashion axe man braid. Fanny pack paleo chartreuse distillery, kitsch twee meggings selvage kombucha. Keffiyeh actually prism listicle. Taxidermy authentic iPhone migas vegan copper mug. Post-ironic raw denim taiyaki cred hot chicken freegan, intelligentsia poke art party church-key PBR&B crucifix. Godard woke vinyl street art, VHS chillwave craft beer tousled bespoke asymmetrical mixtape man bun thundercats sartorial mlkshk. Meggings heirloom XOXO gentrify try-hard stumptown. Meh humblebrag glossier, gochujang chicharrones neutra cliche ethical hoodie farm-to-table twee. Messenger bag offal pug bespoke, put a bird on it tote bag literally.
+1. **Sensor Polling:**  
+   The system continuously polls the IR and ultrasonic sensors, collecting measurements for line checkpoints and object distance.
 
-Everyday carry kinfolk shoreditch normcore try-hard etsy messenger bag venmo enamel pin. Try-hard fanny pack thundercats farm-to-table retro twee. Godard photo booth tofu 90's. Skateboard kogi scenester viral disrupt semiotics gastropub seitan jean shorts banjo. Humblebrag knausgaard waistcoat mixtape. Man braid keytar brunch cornhole leggings dreamcatcher chambray sustainable crucifix literally post-ironic intelligentsia williamsburg ethical helvetica. Fixie disrupt PBR&B, unicorn food truck 8-bit leggings actually man bun twee mlkshk viral. Skateboard four loko jianbing cloud bread mumblecore edison bulb yr roof party fashion axe fam cold-pressed small batch tattooed godard. Bushwick yuccie thundercats schlitz listicle skateboard quinoa. Gentrify hot chicken pop-up keytar master cleanse pork belly. Irony pitchfork la croix neutra freegan. Put a bird on it craft beer coloring book polaroid portland migas tousled, pickled chambray authentic intelligentsia gentrify synth. Letterpress tumblr wolf normcore selvage. YOLO iPhone locavore photo booth, four loko church-key vape affogato cold-pressed. Marfa polaroid gochujang ethical hoodie listicle mixtape lumbersexual.
+2. **Control Input Computation:**  
+   Based on the current and historical measurements from the IR sensors, the system computes the control input needed for accurate line-following.
+
+3. **Object Detection and Avoidance:**  
+   Using distance measurements from the ultrasonic sensor, the system determines if an object is detected and initiates object avoidance routines if necessary.
+
+4. **Surroundings Scan:**  
+   The system scans its surroundings by gathering 20+ floating-point measurements. The exact number depends on the required precision for the environment.
+
+5. **Steering Decision:**  
+   By analyzing the difference between the two IR sensor readings, the system decides whether to steer right or left to stay on track.
+
+6. **Motor and Servo Control:**  
+   Control inputs are then sent to the servo and motors to adjust the vehicle’s movement according to the computed decisions.
+
+---
+### How It Works
+
+1. **Sensor Integration:** The IR sensors track the line on the ground, while the ultrasonic sensor detects obstacles ahead, providing a real-time "point cloud" for navigation.
+2. **Control Algorithm:** The "Fancy Bang-Bang" algorithm adjusts motor speeds based on sensor inputs, allowing the car to navigate tight turns while avoiding obstacles.
+3. **Testing & Optimization:** Conducted thorough testing to minimize motor oscillations and fine-tune the system for real-world performance.
+
+### Technologies Used
+
+- **C++**
+- **Arduino IDE**
+- **IR Sensors**
+- **Ultrasonic Sensors**
+- **Servo Motors**
+
+### Results
+
+Successfully built and demonstrated an autonomous mini-car that can follow paths and avoid obstacles in real-time. This project showcases skills in embedded systems, sensor fusion, and efficient algorithm design.
+
+### Watch the Demo
+
+Check out the video of the autonomous mini-car in action: [Google Drive Video Link](https://drive.google.com/file/d/1pAWdoWh57xi7_PDKFQFv4HTwq_o7ZNs3/view)
