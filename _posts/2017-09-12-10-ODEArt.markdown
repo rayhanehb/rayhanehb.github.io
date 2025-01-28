@@ -16,17 +16,10 @@ tags: [ODE, Python, Art] # add tag
 
 This **ODE Particle Simulator** simulates the behavior of particles interacting with dynamic forces derived from **ordinary differential equations (ODEs)**. The particles evolve in a 2D space with custom dynamics and repelling forces, and obstacles are introduced to influence their trajectories. The simulation is visualized in real-time using **Pygame**, providing an interactive experience where users can observe the particles' motion and interactions.
 
-Mathematically, the particle dynamics are described by the equation:
-
-\[
-\dot{x} = A \cdot x
-\]
-
-
 In addition to this ODE-based movement, particles are influenced by **repelling forces** from nearby obstacles, modeled using an inverse square law.
 
-<video width="80%" controls>
-  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
+<video width="40%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg4.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -48,6 +41,12 @@ In addition to this ODE-based movement, particles are influenced by **repelling 
   Your browser does not support the video tag.
 </video>
 
+
+<video width="30%" controls>
+  <source src="{{site.baseurl}}/assets/img/ODE_eg3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 ### Technical Overview
 
 The simulation works by solving ordinary differential equations (ODEs) to model the dynamics of the particles. Here's a breakdown of the main components:
@@ -63,6 +62,11 @@ The simulation works by solving ordinary differential equations (ODEs) to model 
 
 4. **Velocity and Position Update:**
    The velocity of each particle is updated based on the dynamics and repelling force, and the position is updated accordingly using the **Euler integration** method.
+
+<img src="{{site.baseurl}}/assets/img/ODE_pic1.png" alt="map" style="width:30%;" />
+<img src="{{site.baseurl}}/assets/img/ODE_pic2.png" alt="map" style="width:30%;" />
+<img src="{{site.baseurl}}/assets/img/ODE_pic3.png" alt="map" style="width:30%;" />
+<img src="{{site.baseurl}}/assets/img/ODE_pic4.png" alt="map" style="width:30%;" />
 
 ### Technologies Used
 
