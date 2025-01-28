@@ -59,3 +59,8 @@ Successfully built and demonstrated an autonomous mini-car that can follow paths
 ### Watch the Demo
 
 Check out the video of the autonomous mini-car in action: [Google Drive Video Link](https://drive.google.com/file/d/1pAWdoWh57xi7_PDKFQFv4HTwq_o7ZNs3/view)
+
+
+<a href="https://drive.google.com/file/d/1pAWdoWh57xi7_PDKFQFv4HTwq_o7ZNs3/view" target="_blank">
+    <img src="{{site.baseurl}}/assets/img/bigbangracer.png" alt="ODE Particle Simulator Video Preview" style="width:100%; max-width:600px; border: 1px solid #ddd; border-radius: 4px;">
+</a>
