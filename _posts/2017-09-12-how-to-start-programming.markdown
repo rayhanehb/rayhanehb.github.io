@@ -17,13 +17,15 @@ This project involved designing the front-end circuit and PCB layout for an exte
 - The low-pass filter was specifically designed using the **Analog Filter Wizard** to attenuate content frequencies above 20 kHz.
 ![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_path.png)
 
-![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_ltspice.png)
+<img src="{{site.baseurl}}/assets/img/osc_ltspice.png" alt="Osc LTSpice" style="width:50%;" />
 
 
 ## PCB Layout
 - The PCB was designed using **Autodesk Eagle**, employing **surface-mount technology (SMT)** to achieve a compact and efficient design.
 - The design accommodates **both 1x and 10x input modes** and integrates **AC/DC coupling switches**.
-![Oscilloscope Circuit]({{site.baseurl}}/assets/img/osc_pcb.png)
+
+<img src="{{site.baseurl}}/assets/img/osc_pcb.png" alt="Osc PCB" style="width:50%;" />
+
 
 ## Simulation Results
 - The circuit was successfully simulated on **LTspice**, with accurate switching between the two input modes and correct AC/DC coupling behavior.
