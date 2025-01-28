@@ -41,9 +41,14 @@ In addition to inverse kinematics, the project also included **motion planning**
 ## Final Outcome
 - The project successfully demonstrated the ability of the robotic arm to trace complex shapes using **inverse kinematics** and navigate through a workspace with **obstacle avoidance**.
 
-<a href="https://drive.google.com/file/d/18MrcxGV1CKtQKMXuPYICOO4k5warMc_t/view?usp=sharing" target="_blank">
+<!-- <a href="https://drive.google.com/file/d/18MrcxGV1CKtQKMXuPYICOO4k5warMc_t/view?usp=sharing" target="_blank">
     <img src="{{site.baseurl}}/assets/img/kuka_vid_prev.png" alt="KUKA Obstacle Avoidance Path Planning" style="width:100%; max-width:600px; border: 1px solid #ddd; border-radius: 4px;">
-</a>
+</a> -->
+
+<video width="90%" controls>
+  <source src="{{site.baseurl}}/assets/img/kuka_demo2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 This project showcases expertise in:
 - **Kinematic modeling** for robotics.
