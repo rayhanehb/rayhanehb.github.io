@@ -10,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Rayhaneh Behravesh # add your name
 author-img: me.png # add your photo
 about-author: Engineering Science Robotics Student at the University of Toronto # add description
-social-twitter: # add your Twitter handle
+# social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: rayhanehb # add your Github handle
 social-linkedin: http://www.linkedin.com/in/r-behravesh # add your Linkedin handle
