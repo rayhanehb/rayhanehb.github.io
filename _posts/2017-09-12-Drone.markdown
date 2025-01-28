@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Drone Flight
-date: 2023-03-27 12:00:00
+date: 2025-01-27 12:00:00
 description: Design and implementation of a drone flight controller and sensor fusion for stable and autonomous flight.
-img: osc_pcb_prev.png # Add image post (optional)
+img: drone_header.png # Add image post (optional)
 fig-caption: Oscilloscope Front-End Circuit Design
 tags: [Oscilloscope, Circuit Design, PCB, Analog Filters]
 ---
-
+## Overview
 This project involved assembling and configuring a drone using a CubePilot flight controller and Jetson Nano system for flight readiness and performance testing.
 
 
@@ -27,13 +27,14 @@ This project involved assembling and configuring a drone using a CubePilot fligh
 - **Onboard Computer:** Jetson Nano for future image processing and autonomy.
 
 
-<img src="{{site.baseurl}}/assets/img/drone_header.png" alt="Osc LTSpice" style="width:40%;" />
-<img src="{{site.baseurl}}/assets/img/drone_closeup.png" alt="Osc LTSpice" style="width:40%;" />
+<img src="{{site.baseurl}}/assets/img/drone_header.png" alt="drone" style="width:40%;" />
+<img src="{{site.baseurl}}/assets/img/drone_closeup.png" alt="drone" style="width:40%;" />
 
 
 ## Configuration Process
 Propeller Direction: Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
-<img src="{{site.baseurl}}/assets/img/drone_prooperllowdir.png" alt="Osc LTSpice" style="width:50%;" />
+
+<img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone" style="width:50%;" />
 
 
 ## Project Results
