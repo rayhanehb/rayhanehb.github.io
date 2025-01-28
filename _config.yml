@@ -8,7 +8,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Rayhaneh Behravesh # add your name
-# author-img: david-freeman.jpg # add your photo
+author-img: me.png # add your photo
 about-author: Engineering Science Robotics Student at the University of Toronto # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
