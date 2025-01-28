@@ -3,7 +3,7 @@ layout: post
 title: Mail Delivery Robot (Bayesian Localization)
 date: 2022-04-06 12:00:00
 description: TurtleBot3 Waffle Pi Bayes Localization
-img: {{site.baseurl}}/assets/img/trtlebot.jpg # Add image post (optional)
+img: tbotpath.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [ROS, Localization, TurtleBot3]
 ---
