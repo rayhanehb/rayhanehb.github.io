@@ -1,3 +1,8 @@
 ## My projects and stuff :
 
-rayhanehb.github.io 
+\
+![](https://github.com/rayhanehb)
+
+## Demo
+
+Check the theme in action [Demo](https://rayhanehb.github.io/flexible-jekyll/)
