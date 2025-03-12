@@ -18,7 +18,6 @@ The standard RRT algorithm was implemented to find feasible paths through comple
 - **Tree Expansion**: From the nearest node in the tree, the algorithm attempts to expand toward the sampled point.
 - **Collision Detection**: Implemented an efficient collision checking system using precomputed collision maps to speed up the planning process.
 
-![RRT Path Planning Expansion]({{site.baseurl}}/assets/img/pathplanning_rrt.png)
 <img src="{{site.baseurl}}/assets/img/pathplanning_rrt.png" alt="RRT Tree Expansion" style="width:50%;" />
 
 
