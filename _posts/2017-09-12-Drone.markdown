@@ -4,7 +4,7 @@ title: Drone Flight
 date: 2025-01-27 12:00:00
 description: Design and implementation of a drone flight controller and sensor fusion for stable and autonomous flight.
 img: drone_header.png # Add image post (optional)
-fig-caption: Oscilloscope Front-End Circuit Design
+fig-caption: Drone Flight Test
 tags: [Oscilloscope, Circuit Design, PCB, Analog Filters]
 ---
 ## Overview

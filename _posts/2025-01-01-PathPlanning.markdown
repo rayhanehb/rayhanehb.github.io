@@ -18,8 +18,11 @@ The standard RRT algorithm was implemented to find feasible paths through comple
 - **Tree Expansion**: From the nearest node in the tree, the algorithm attempts to expand toward the sampled point.
 - **Collision Detection**: Implemented an efficient collision checking system using precomputed collision maps to speed up the planning process.
 
-![RRT Path Planning Expansion]({{site.baseurl}}/assets/img/rrt_expansion.png)
+![RRT Path Planning Expansion]({{site.baseurl}}/assets/img/pathplanning_rrt.png)
 <img src="{{site.baseurl}}/assets/img/pathplanning_rrt.png" alt="RRT Tree Expansion" style="width:50%;" />
+
+
+
 
 The standard RRT algorithm provides rapid exploration of the configuration space and finds feasible paths quickly, but these paths are typically not optimal in terms of distance or smoothness.
 
@@ -38,23 +41,23 @@ The implementation includes:
 - Path cost optimization through tree rewiring
 - Smooth trajectory generation between nodes
 
-## Environment Representation
+<!-- ## Environment Representation
 
 The system works with different environment maps:
 
 - **Occupancy Grid Maps**: Loaded from image files with configurable resolution.
 - **Precomputed Collision Maps**: Generated to accelerate collision checking during planning.
-- **Map Bounds**: Automatic detection and enforcement of navigable areas.
+- **Map Bounds**: Automatic detection and enforcement of navigable areas. -->
+<!-- 
+<img src="{{site.baseurl}}/assets/img/map_representation.png" alt="Map Representation" style="width:40%;" /> -->
 
-<img src="{{site.baseurl}}/assets/img/map_representation.png" alt="Map Representation" style="width:40%;" />
-
-## Robot Kinematics and Simulation
+<!-- ## Robot Kinematics and Simulation
 
 The planner accounts for the robot's kinematic constraints:
 
 - **Unicycle Model**: The robot follows a unicycle motion model with controllable linear and angular velocities.
 - **Motion Simulation**: Realistic trajectory prediction based on velocity and steering commands.
-- **Collision Footprint**: Circular robot footprint used for collision checking.
+- **Collision Footprint**: Circular robot footprint used for collision checking. -->
 
 ## Results and Performance
 

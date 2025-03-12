@@ -18,6 +18,7 @@ The robotic arm was tasked with **tracing a jug** using inverse kinematics. By s
 - **Inverse Kinematics**: The arm solved for joint angles corresponding to a desired end effector position, allowing it to trace the outline of the jug precisely.
 
 ![Robotic Arm Tracing Jug]({{site.baseurl}}/assets/img/kuka_jug.png)
+<img src="{{site.baseurl}}/assets/img/kuka_jug.png" alt="Simulation" style="width:40%;" />
 
 The algorithm ensured smooth motion and precise placement of the arm at each point along the jug’s outline, allowing for detailed tracing. The robotic arm adapted to each segment of the jug's curve, ensuring an accurate representation of the shape.
 
@@ -39,7 +40,7 @@ In addition to inverse kinematics, the project also included **motion planning**
 
 
 ## Final Outcome
-- The project successfully demonstrated the ability of the robotic arm to trace complex shapes using **inverse kinematics** and navigate through a workspace with **obstacle avoidance**.
+The project successfully demonstrated the ability of the robotic arm to trace complex shapes using **inverse kinematics** and navigate through a workspace with **obstacle avoidance**.
 
 <!-- <a href="https://drive.google.com/file/d/18MrcxGV1CKtQKMXuPYICOO4k5warMc_t/view?usp=sharing" target="_blank">
     <img src="{{site.baseurl}}/assets/img/kuka_vid_prev.png" alt="KUKA Obstacle Avoidance Path Planning" style="width:100%; max-width:600px; border: 1px solid #ddd; border-radius: 4px;">
