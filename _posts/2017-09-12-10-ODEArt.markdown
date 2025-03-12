@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ODE Particle Simulator
+title: An Ode - (ODE Particle Simulator)
 date: 2024-10-12 00:00:00 +0300
-description: ODE Art Simulation # Add post description (optional)
+description: An Ode # Add post description (optional)
 img: ODE_header2.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [ODE, Python, Art] # add tag
