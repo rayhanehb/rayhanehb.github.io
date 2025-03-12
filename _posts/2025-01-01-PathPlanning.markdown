@@ -3,7 +3,7 @@ layout: post
 title: RRT Path Planning for Robot Navigation
 date: 2025-03-12 12:00:00
 description: Implementation of Rapidly-exploring Random Tree (RRT) and RRT* algorithms for efficient robot path planning with collision avoidance in complex environments.
-img: pathplanning_rrtstar.png # Add image post (optional)
+img: pathplannning_rrtstar.png # Add image post (optional)
 fig-caption: Robot Path Planning using RRT and RRT*
 tags: [Robotics, Path Planning, RRT, RRT*, Collision Avoidance, Motion Planning]
 ---
