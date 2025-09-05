@@ -21,8 +21,12 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
   - Intel RealSense T265 for visual-inertial odometry.  
   - Sony IMX219 RGB camera with SSD-Mobilenet-v2 for human detection.  
   - ArUco marker detection to simulate fire signatures.  
-![Perception Calibration]({{site.baseurl}}/assets/img/drone_cal.png){: style="width:70%;" }
-*Calibration of camera and grid setup*
+<div style="text-align:center;">
+  <img src="{{site.baseurl}}/assets/img/drone_cal.png" alt="Perception Calibration" style="width:70%;" />
+  <p style="font-style:italic; margin-top:10px;">
+    Calibration of camera and grid setup
+  </p>
+</div>
 
 - **Projection:**  
   - Bounding boxes and ArUco marker centroids are back-projected from image space into the ground plane using camera intrinsics and the drone’s real-time pose from the Intel RealSense T265.  
@@ -37,8 +41,13 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
 - **Outcome:**  
   - Produces live situational awareness, showing firefighters where hazards and survivors are located in the surveyed area.  
 
-![Projection and Mapping Visualization]({{site.baseurl}}/assets/img/drone_miniexample.png){: style="width:70%;" }
-*Example of real-time occupancy grid mapping with fire (black) and human (grey) classifications.*
+<div style="text-align:center;">
+  <img src="{{site.baseurl}}/assets/img/drone_miniexample.png" alt="Projection and Mapping Visualization" style="width:70%;" />
+  <p style="font-style:italic; margin-top:10px;">
+    Example of real-time occupancy grid mapping with fire (black) and human (grey) classifications.
+  </p>
+</div>
+
 
 - **Planning & Navigation:**  
   - Phase 1: Structured “lawnmower” sweep of the environment.  
