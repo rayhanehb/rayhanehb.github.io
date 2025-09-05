@@ -44,7 +44,7 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
 <div style="text-align:center;">
   <img src="{{site.baseurl}}/assets/img/drone_miniexample.png" alt="Projection and Mapping Visualization" style="width:70%;" />
   <p style="font-style:italic; margin-top:10px;">
-    Example of real-time occupancy grid mapping with fire (black) and human (grey) classifications.
+    Example of real-time occupancy grid mapping with fire (black) and human (grey) classifications. (red ball = real time human detection, green box = real time fire (ArUco) detection)
   </p>
 </div>
 
