@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wildfire Surveying Drone
+title: Autonomous Wildfire Surveying Drone
 date: 2025-01-27 12:00:00
 description: Autonomous quadcopter system for wildfire situational awareness through real-time detection and mapping.
 img: drone_gpt2.png
