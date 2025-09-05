@@ -60,13 +60,18 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
   <img src="{{site.baseurl}}/assets/img/drone_grid.png" alt="drone" style="width:40%; margin:10px;" />
 </div>
 
-- **Autonomous Flight:**  
-<div style="text-align:center; margin-top:20px;">
-  <video width="90%" controls>
+- **Autonomous Flight:** 
+- preplanned waypoint for area coverage
+- final position map outlines drone flight path and waypoint coverage (green dots) 
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 20px;">
+  <video width="45%" controls>
     <source src="{{site.baseurl}}/assets/img/drone_lawnmower.webm" type="video/webm">
     Your browser does not support the video tag.
   </video>
+
+  <img src="{{site.baseurl}}/assets/img/drone_pathgraph.png" alt="drone" style="width:45%;" />
 </div>
+
 
 ## Results
 - Achieved **autonomous area coverage** using a lawnmower pattern.  
