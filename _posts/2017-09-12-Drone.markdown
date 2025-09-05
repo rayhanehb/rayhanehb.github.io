@@ -1,42 +1,67 @@
 ---
 layout: post
-title: Drone Flight
+title: Wildfire Surveying Drone
 date: 2025-01-27 12:00:00
-description: Design and implementation of a drone flight controller and sensor fusion for stable and autonomous flight.
-img: drone_header.png # Add image post (optional)
-fig-caption: Drone Flight Test
-tags: [Oscilloscope, Circuit Design, PCB, Analog Filters]
+description: Autonomous quadcopter system for wildfire situational awareness through real-time detection and mapping.
+img: drone_gpt2.png
+fig-caption: Autonomous Wildfire Surveying Drone
+tags: [Drone, ROS2, Computer Vision, Mapping, Autonomy]
 ---
+
 ## Overview
-This project involved assembling and configuring a drone using a CubePilot flight controller and Jetson Nano system for flight readiness and performance testing.
-
-
-<video width="90%" controls>
-  <source src="{{site.baseurl}}/assets/img/drone_flighttest1.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-
-
-## Technical Specifications
-- **Frame:** Lightweight carbon fiber frame with four motors and ESCs.
-- **Flight:** Controller: CubePilot Orange Cube+ with PX4 autopilot firmware.
-- **Motors & ESCs:** Four brushless motors connected to ESCs.
-- **Remote Control:** Taranis Transmitter and Archer R4 receiver.
-- **Sensors:** TeraRanger EVO for distance measurements, integrated buzzer.
-- **Software:** PX4 firmware on the Cube+ and QGroundControl for setup and monitoring.
-- **Onboard Computer:** Jetson Nano for future image processing and autonomy.
-
-
-<img src="{{site.baseurl}}/assets/img/drone_header.png" alt="drone" style="width:40%;" />
-<img src="{{site.baseurl}}/assets/img/drone_closeup.png" alt="drone" style="width:40%;" />
-
+This project, developed as a capstone at the University of Toronto, addresses the urgent need for **improved situational awareness during wildfires**. Our solution is an **autonomous quadcopter** that detects wildfire hotspots and human survivors, then maps these findings in real time to assist emergency responders.  
+Using onboard perception and mapping, the system identifies hazards, geolocates them, and builds a **2D occupancy grid** to guide search-and-rescue operations.  
 
 ## Configuration Process
-Propeller Direction: Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
+- **Propeller Direction:** Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
+<img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone flight path" style="width:50%;" />
 
-<img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone" style="width:50%;" />
+## System Architecture
+- **Perception:**  
+  - Intel RealSense T265 for visual-inertial odometry.  
+  - Sony IMX219 RGB camera with SSD-Mobilenet-v2 for human detection.  
+  - ArUco marker detection to simulate fire signatures.  
+![Perception Calibration]({{site.baseurl}}/assets/img/drone_cal.png){: style="width:70%;" }
+*Calibration of camera and grid setup*
+
+- **Projection:**  
+  - Bounding boxes and ArUco marker centroids are back-projected from image space into the ground plane using camera intrinsics and the drone’s real-time pose from the Intel RealSense T265.  
+- **Mapping:**  
+  - Real-time occupancy grid fusing detections and pose data, published as ROS2 `nav_msgs/OccupancyGrid`.
+  - Log-odds 2D occupancy grid continuously updates, fusing projected detections with pose data.  
+- **Visualization:**  
+  - **Green markers:** human detections (candidate rescue targets).  
+  - **Red markers:** fire detections (hazards).  
+  - **Grey cells:** confirmed human presence.  
+  - **Black cells:** confirmed fire location.  
+- **Outcome:**  
+  - Produces live situational awareness, showing firefighters where hazards and survivors are located in the surveyed area.  
+
+![Projection and Mapping Visualization]({{site.baseurl}}/assets/img/drone_miniexample.png){: style="width:70%;" }
+*Example of real-time occupancy grid mapping with fire (black) and human (grey) classifications.*
+
+- **Planning & Navigation:**  
+  - Phase 1: Structured “lawnmower” sweep of the environment.  
+  - Phase 2: Revisits detected humans by lowering altitude for closer inspection.  
+- **Onboard Compute:** NVIDIA Jetson Nano running ROS2 for perception, mapping, and planning.  
+- **Flight Control:** Cube Orange with PX4 firmware for stabilization and waypoint following.
+
+<img src="{{site.baseurl}}/assets/img/drone_planning.png" alt="drone" style="width:40%;" />
+<img src="{{site.baseurl}}/assets/img/drone_grid.png" alt="drone" style="width:40%;" />
+
+- **Autonomous Flight:**
+<video width="90%" controls> <source src="{{site.baseurl}}/assets/img/drone_lawnmover.webm" type="video/webm"> Your browser does not support the video tag. </video>
+
+## Results
+- Achieved **autonomous area coverage** using a lawnmower pattern.  
+- Real-time detection and geolocation of simulated fire and human markers.  
+- Successful fusion of detections into a live occupancy grid.  
+- Demonstrated robust system integration of perception, mapping, and planning entirely onboard the drone.  
 
 
-## Project Results
-This section highlights the results from assembling and testing the drone.
+
+## Future Work
+- Integrating thermal cameras and LiDAR for real-world deployment.  
+- Expanding from 2D to 3D mapping for varied terrain.  
+- Scaling compute power (e.g., Jetson Orin) for higher-throughput models like YOLO-v8.  
 
