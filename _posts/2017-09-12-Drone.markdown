@@ -14,7 +14,7 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
 
 ## Configuration Process
 - **Propeller Direction:** Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
-<img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone flight path" style="width:50%;" />
+<img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone flight path" style="width:25%;" />
 
 ## System Architecture
 - **Perception:**  
