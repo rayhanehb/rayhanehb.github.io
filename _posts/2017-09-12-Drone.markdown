@@ -34,8 +34,8 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
   - Real-time occupancy grid fusing detections and pose data, published as ROS2 `nav_msgs/OccupancyGrid`.
   - Log-odds 2D occupancy grid continuously updates, fusing projected detections with pose data.  
 - **Visualization:**  
-  - **Green markers:** human detections (candidate rescue targets).  
-  - **Red markers:** fire detections (hazards).  
+  - **Green markers:** fire detections .  
+  - **Red markers:** human detections (candidate rescue targets).  
   - **Grey cells:** confirmed human presence.  
   - **Black cells:** confirmed fire location.  
 - **Outcome:**  
