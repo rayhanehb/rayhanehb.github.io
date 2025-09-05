@@ -42,9 +42,7 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
   - ArUco marker detection to simulate fire signatures.  
 <div style="text-align:center;">
   <img src="{{site.baseurl}}/assets/img/drone_cal.png" alt="Perception Calibration" style="width:70%;" />
-  <p style="font-style:italic; margin-top:10px;">
-    Calibration of camera and grid setup
-  </p>
+  
 </div>
 
 - **Projection:**  
