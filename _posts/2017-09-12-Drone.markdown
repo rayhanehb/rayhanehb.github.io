@@ -13,7 +13,7 @@ This project, developed as a capstone at the University of Toronto, addresses th
 Using onboard perception and mapping, the system identifies hazards, geolocates them, and builds a **2D occupancy grid** to guide search-and-rescue operations.  
 
 ## Building and Configuration 
--**Hardware:**  
+- **Hardware:**  
   - **Frame:** Lightweight carbon fiber frame with four motors and ESCs.
   - **Flight Controller:** CubePilot Orange Cube+ with PX4 autopilot firmware.
   - **Motors & ESCs:** Four brushless motors connected to ESCs.
@@ -25,7 +25,7 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
   - **Software:** ROS2 Foxy on Ubuntu 20.04 for perception, mapping, and planning.
 
 <div style="text-align:center;">
-  <img src="{{site.baseurl}}/assets/img/drone_header.png" alt="Perception Calibration" style="width:70%;" />
+  <img src="{{site.baseurl}}/assets/img/drone_header.png" alt="Perception Calibration" style="width:40%;" />
   <p style="font-style:italic; margin-top:10px;">
     Calibration of camera and grid setup
   </p>
