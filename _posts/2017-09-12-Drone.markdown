@@ -46,11 +46,18 @@ Using onboard perception and mapping, the system identifies hazards, geolocates 
 - **Onboard Compute:** NVIDIA Jetson Nano running ROS2 for perception, mapping, and planning.  
 - **Flight Control:** Cube Orange with PX4 firmware for stabilization and waypoint following.
 
-<img src="{{site.baseurl}}/assets/img/drone_planning.png" alt="drone" style="width:40%;" />
-<img src="{{site.baseurl}}/assets/img/drone_grid.png" alt="drone" style="width:40%;" />
+<div style="text-align:center;">
+  <img src="{{site.baseurl}}/assets/img/drone_planning.png" alt="drone" style="width:40%; margin:10px;" />
+  <img src="{{site.baseurl}}/assets/img/drone_grid.png" alt="drone" style="width:40%; margin:10px;" />
+</div>
 
-- **Autonomous Flight:**
-<video width="90%" controls> <source src="{{site.baseurl}}/assets/img/drone_lawnmover.webm" type="video/webm"> Your browser does not support the video tag. </video>
+- **Autonomous Flight:**  
+<div style="text-align:center; margin-top:20px;">
+  <video width="90%" controls>
+    <source src="{{site.baseurl}}/assets/img/drone_lawnmower.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Results
 - Achieved **autonomous area coverage** using a lawnmower pattern.  
