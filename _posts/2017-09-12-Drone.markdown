@@ -12,9 +12,28 @@ tags: [Drone, ROS2, Computer Vision, Mapping, Autonomy]
 This project, developed as a capstone at the University of Toronto, addresses the urgent need for **improved situational awareness during wildfires**. Our solution is an **autonomous quadcopter** that detects wildfire hotspots and human survivors, then maps these findings in real time to assist emergency responders.  
 Using onboard perception and mapping, the system identifies hazards, geolocates them, and builds a **2D occupancy grid** to guide search-and-rescue operations.  
 
-## Configuration Process
+## Building and Configuration 
+-**Hardware:**  
+  - **Frame:** Lightweight carbon fiber frame with four motors and ESCs.
+  - **Flight Controller:** CubePilot Orange Cube+ with PX4 autopilot firmware.
+  - **Motors & ESCs:** Four brushless motors connected to ESCs.
+  - **Remote Control:** Taranis Transmitter and Archer R4 receiver.
+  - **Sensors:** TeraRanger EVO for distance measurements, integrated buzzer.
+  - **Software:** PX4 firmware on the Cube+ and QGroundControl for setup and monitoring.
+  - **Onboard Computer:** Jetson Nano for future image processing and autonomy.
+  - **Camera:** Sony IMX219 RGB camera for human detection and Intel RealSense T265 for visual-inertial odometry.
+  - **Software:** ROS2 Foxy on Ubuntu 20.04 for perception, mapping, and planning.
+
+<div style="text-align:center;">
+  <img src="{{site.baseurl}}/assets/img/drone_header.png" alt="Perception Calibration" style="width:70%;" />
+  <p style="font-style:italic; margin-top:10px;">
+    Calibration of camera and grid setup
+  </p>
+</div>
+
 - **Propeller Direction:** Properly configured the propellers by ensuring the correct clockwise (CW) and counterclockwise (CCW) orientation of the motors. This step ensures stable flight by matching motor rotation with the correct propeller direction.
 <img src="{{site.baseurl}}/assets/img/drone_propellordir.png" alt="drone flight path" style="width:25%;" />
+
 
 ## System Architecture
 - **Perception:**  
