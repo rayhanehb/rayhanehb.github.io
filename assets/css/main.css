@@ -1364,7 +1364,33 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+/* Add this to your main.css */
+.main-nav {
+  margin: 20px 0 20px 260px; /* aligns with content-box padding */
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #263959;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #4f9fcf;
+} only screen and (max-width: 992px) {
   .post {
     width: 48%;
     max-width: 100%;
