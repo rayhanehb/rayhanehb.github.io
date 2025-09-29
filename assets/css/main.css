@@ -1390,7 +1390,9 @@ a.newer-posts:hover {
 
 .main-nav a:hover {
   color: #4f9fcf;
-} only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 992px) {
   .post {
     width: 48%;
     max-width: 100%;
