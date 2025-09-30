@@ -161,8 +161,8 @@ class: about-page
 }
 
 .experience img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   margin-right: 16px;
   border-radius: 6px;
@@ -178,8 +178,8 @@ class: about-page
 }
 
 .art-gallery img {
-  width: 100%;
-  max-width: 180px;
+  width: 120%;
+  max-width: 200px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
