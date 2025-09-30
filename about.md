@@ -84,11 +84,10 @@ class: about-page
 </p>
 
 <div class="art-gallery">
-  <img src="https://via.placeholder.com/200" alt="Drawing placeholder">
   <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="Drawing placeholder">
   <img src="{{ site.baseurl }}/assets/img/teamlab_drawing.png" alt="Drawing placeholder">
   <img src="{{ site.baseurl }}/assets/img/drawing_tazhib.png" alt="Drawing placeholder">
-  <img src="{{ site.baseurl }}/assets/img/drawing_birds.png" alt="Drawing placeholder">
+  <img src="{{ site.baseurl }}/assets/img/drawing_bird.png" alt="Drawing placeholder">
 </div>
 
 ---
@@ -160,3 +159,40 @@ class: about-page
   align-items: flex-start;
   margin-bottom: 30px;
   flex-wrap: wrap; /* stacks on*
+
+/* Add or update these styles for your about page images */
+
+/* .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(38,57,89,0.12);
+  flex-shrink: 0;
+} */
+
+.experience img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(38,57,89,0.10);
+}
+
+.art-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.art-gallery img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(38,57,89,0.10);
+  background: #fafbfc;
+}
