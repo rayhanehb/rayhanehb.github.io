@@ -80,7 +80,7 @@ class: about-page
   In one of my favorite projects, I turned an <strong>ODE assignment</strong> into an art piece by 
   visualizing particle motion in creative ways.  
   I also loved my visit to <strong>teamLab Tokyo</strong>, where our hand-drawn sketches came to life 
-  on massive interactive screens — an inspiring blend of <em>imagination and engineering</em>.
+  on massive interactive screens. I would love to explore more projects that blend art and technology.
 </p>
 
 <div class="art-gallery">
