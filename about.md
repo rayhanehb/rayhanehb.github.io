@@ -75,18 +75,20 @@ class: about-page
 ## 🎨 Art, Engineering and Creativity
 
 <p>
-  Outside of engineering, I love exploring the ways <em>art and technology</em> overlap.  
-  In one of my favorite projects, I well known ODE equationsinto an art piece by 
-  visualizing their solutions as particle motion in creative ways.  
-  I also loved my visit to <strong>teamLab Tokyo</strong>, where our hand-drawn sketches came to life 
-  on massive interactive screens. I would love to explore more projects that blend art and technology.
+  Outside of engineering, I love exploring the ways art and technology overlap. In one of my favorite projects, I turned well-known ODE equations into an art piece by visualizing their solutions as particle motion in creative ways. I also loved my visit to teamLab Tokyo, where our hand-drawn sketches came to life on massive interactive screens. I would love to explore more projects that blend art and technology.
 </p>
 
 <div class="art-gallery">
-  <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="Drawing placeholder">
-  <img src="{{ site.baseurl }}/assets/img/teamlab_drawing.png" alt="Drawing placeholder">
-  <img src="{{ site.baseurl }}/assets/img/drawing_tazhib.png" alt="Drawing placeholder">
-  <img src="{{ site.baseurl }}/assets/img/drawing_bird.png" alt="Drawing placeholder">
+  <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="ODE Project">
+  <img src="{{ site.baseurl }}/assets/img/teamlab_drawing.png" alt="TeamLab Drawing">
+  <img src="{{ site.baseurl }}/assets/img/drawing_tazhib.png" alt="Tazhib Drawing">
+  <img src="{{ site.baseurl }}/assets/img/drawing_bird.png" alt="Bird Drawing">
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
 </div>
 
 ---
@@ -161,9 +163,10 @@ class: about-page
 }
 
 .experience img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  width: 80px;           /* logo box size */
+  height: 80px;
+  object-fit: cover;      /* fill box, crop if needed */
+  object-position: center; /* center cropped content */
   margin-right: 16px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(38,57,89,0.1);
@@ -178,12 +181,76 @@ class: about-page
 }
 
 .art-gallery img {
-  width: 120%;
-  max-width: 200px;
+  width: 100%;
+  max-width: 180px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 1px 6px rgba(38,57,89,0.1);
   background: #fafbfc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.art-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
 }
 </style>
+
+<script>
+  // Lightbox logic
+  const galleryImages = document.querySelectorAll('.art-gallery img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
