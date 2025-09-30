@@ -74,7 +74,6 @@ class: about-page
 
 ## 🎨 Art, Engineering and Creativity
 
-
 <p>
   Outside of engineering, I love exploring the ways <em>art and technology</em> overlap.  
   In one of my favorite projects, I turned an <strong>ODE assignment</strong> into an art piece by 
@@ -125,7 +124,7 @@ class: about-page
   max-width: 750px;
   margin: 0 auto;
   text-align: left;
-  flex-wrap: wrap; /* makes it responsive */
+  flex-wrap: wrap;
 }
 
 .profile-pic {
@@ -158,41 +157,33 @@ class: about-page
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* stacks on*
-
-/* Add or update these styles for your about page images */
-
-/* .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(38,57,89,0.12);
-  flex-shrink: 0;
-} */
+  flex-wrap: nowrap;
+}
 
 .experience img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  margin-right: 18px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(38,57,89,0.10);
+  margin-right: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(38,57,89,0.1);
 }
 
 .art-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  justify-items: center;
   margin: 24px 0;
 }
 
 .art-gallery img {
-  width: 110px;
-  height: 110px;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(38,57,89,0.10);
+  box-shadow: 0 1px 6px rgba(38,57,89,0.1);
   background: #fafbfc;
 }
+</style>
