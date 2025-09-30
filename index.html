@@ -1,11 +1,30 @@
 ---
 layout: main
 ---
+
+<div class="about-header">
+  <div class="intro">
+    <img src="{{ site.baseurl }}/assets/img/rayhaneh_about.png" alt="Rayhaneh Behravesh" class="profile-pic">
+    <div class="intro-text">
+      <h1>Hi, I’m Rayhaneh 👋</h1>
+      <p>
+        I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
+        and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
+      </p>
+      <p>
+        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
+        Feel free to reach out! You can email me at 
+        <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
+        <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
   {% endif %}
   <div class="post-content">
     <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
