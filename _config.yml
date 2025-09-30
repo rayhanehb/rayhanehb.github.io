@@ -1,6 +1,6 @@
 title: Rayhaneh Behravesh
 description: > # this means to ignore newlines until "baseurl:"
-  Engineering Science Robotics Student at the University of Toronto
+  Robotics at Johns Hopkins University | Engineering Science at the University of Toronto
 permalink: ':title/'
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
