@@ -76,8 +76,8 @@ class: about-page
 
 <p>
   Outside of engineering, I love exploring the ways <em>art and technology</em> overlap.  
-  In one of my favorite projects, I turned an <strong>ODE assignment</strong> into an art piece by 
-  visualizing particle motion in creative ways.  
+  In one of my favorite projects, I well known ODE equationsinto an art piece by 
+  visualizing their solutions as particle motion in creative ways.  
   I also loved my visit to <strong>teamLab Tokyo</strong>, where our hand-drawn sketches came to life 
   on massive interactive screens. I would love to explore more projects that blend art and technology.
 </p>
