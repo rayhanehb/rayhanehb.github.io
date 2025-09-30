@@ -16,7 +16,7 @@ class: about-page
       </p>
       <p>
         I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
-        Feel free to reach out — you can email me at 
+        Feel free to reach out! You can email me at 
         <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
         <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
       </p>
