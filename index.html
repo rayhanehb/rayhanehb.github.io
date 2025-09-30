@@ -4,20 +4,18 @@ layout: main
 
 <div class="about-header">
   <div class="intro-bubble">
-    <div class="intro">
-      <div class="intro-text">
-        <h1>Hi, I’m Rayhaneh 👋</h1>
-        <p>
-          I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
-          and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
-        </p>
-        <p>
-          I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
-          Feel free to reach out! You can email me at 
-          <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
-          <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
-        </p>
-      </div>
+    <div class="intro-text">
+      <h1>Hi, I’m Rayhaneh 👋</h1>
+      <p>
+        I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
+        and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
+      </p>
+      <p>
+        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
+        Feel free to reach out! You can email me at 
+        <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
+        <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
+      </p>
     </div>
   </div>
 </div>
@@ -37,3 +35,38 @@ layout: main
 {% endfor %}
 
 {% include pagination.html %}
+
+<style>
+/* Intro bubble styling */
+.intro-bubble {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 28px 32px;
+  background: #f8fafc;
+  border: 2px solid #e0e7ff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(38, 57, 89, 0.08);
+  text-align: left;
+}
+
+.intro-bubble h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  color: #263959;
+}
+
+.intro-bubble p {
+  margin: 0.6em 0;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.intro-bubble a {
+  color: #4f9fcf;
+  text-decoration: none;
+}
+.intro-bubble a:hover {
+  text-decoration: underline;
+}
+</style>
