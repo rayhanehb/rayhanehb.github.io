@@ -123,13 +123,6 @@ class: about-page
     <img class="lightbox-content" id="lightbox-img">
   </div>
 
-  <!-- Contact -->
-  <h2>📫 Contact</h2>
-  <p>
-    📧 <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a><br>
-    💻 <a href="https://github.com/rayhanehb">GitHub</a><br>
-    💼 <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>
-  </p>
 
 </div>
 
