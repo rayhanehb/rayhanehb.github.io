@@ -122,13 +122,6 @@ class: about-page
       <img class="lightbox-content" id="lightbox-img">
     </div>
 
-    <!-- Contact -->
-    <h2>📫 Contact</h2>
-    <p>
-      📧 <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a><br>
-      💻 <a href="https://github.com/rayhanehb">GitHub</a><br>
-      💼 <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>
-    </p>
 
   </main>
 </div>
@@ -211,14 +204,19 @@ class: about-page
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(38,57,89,0.1);
 }
-
-/* Art gallery */
+#Art-gallery 
 .art-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* always 2 per row */
   gap: 16px;
   justify-items: center;
   margin: 24px 0;
+}
+
+@media (min-width: 900px) {
+  .art-gallery {
+    grid-template-columns: repeat(4, 1fr); /* 4 per row on larger screens */
+  }
 }
 
 .art-gallery img {
@@ -232,6 +230,7 @@ class: about-page
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 
 .art-gallery img:hover {
   transform: scale(1.05);
