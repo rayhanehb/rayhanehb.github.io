@@ -5,185 +5,201 @@ permalink: /about.html
 class: about-page
 ---
 
-<!-- Sidebar -->
-<aside class="sidebar">
-  <header>
-    <div class="about">
-      <div class="cover-author-image">
-        <a href="{{site.baseurl}}/">
-          <img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}">
-        </a>
+<div class="page-container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <header>
+      <div class="about">
+        <div class="cover-author-image">
+          <a href="{{site.baseurl}}/">
+            <img src="{{site.baseurl}}/assets/img/{{site.author-img}}" alt="{{site.author}}">
+          </a>
+        </div>
+        <div class="author-name">{{site.author}}</div>
+        <p>{{site.about-author}}</p>
       </div>
-      <div class="author-name">{{site.author}}</div>
-      <p>{{site.about-author}}</p>
+    </header>
+    <footer>
+      <section class="contact">
+        <h3 class="contact-title">Contact me</h3>
+        <ul>
+          <li><a href="mailto:rayhaneh.behravesh@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="http://github.com/rayhanehb" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/r-behravesh" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </section>
+      <div class="copyright">
+        <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+      </div>
+    </footer>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content-box clearfix">
+
+    <!-- Intro bubble -->
+    <div class="intro-bubble">
+      <p>
+        I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
+        and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
+      </p>
+      <p>
+        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
+        Feel free to reach out! You can email me at 
+        <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
+        <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
+      </p>
     </div>
-  </header>
-  <footer>
-    <section class="contact">
-      <h3 class="contact-title">Contact me</h3>
-      <ul>
-        <li><a href="http://github.com/{{site.social-github | default: ''}}" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a href="http://www.linkedin.com/in/r-behravesh" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="mailto:rayhaneh.behravesh@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-      </ul>
-    </section>
-    <div class="copyright">
-      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
-    </div>
-  </footer>
-</aside>
 
-<!-- Navigation -->
-<nav class="main-nav">
-  <ul>
-    <li><a href="{{ site.baseurl }}/">Home</a></li>
-    <li><a href="{{ site.baseurl }}/about.html">About Me</a></li>
-  </ul>
-</nav>
+    <!-- Work & Research -->
+    <h2>💼 Work & Research</h2>
 
-<!-- Main content -->
-<div class="content-box clearfix">
-
-  <div class="about-header">
-    <div class="intro">
-      <img src="{{ site.baseurl }}/assets/img/rayhaneh_about.png" alt="Rayhaneh Behravesh" class="profile-pic">
-      <div class="intro-text">
-        <h1>Hi, I’m Rayhaneh 👋</h1>
+    <div class="experience">
+      <img src="{{ site.baseurl }}/assets/img/sickkids_logo.png" alt="SickKids logo">
+      <div>
+        <h3>SickKids Hospital – Robotics Research Student</h3>
         <p>
-          I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
-          and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
-        </p>
-        <p>
-          I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
-          Feel free to reach out! You can email me at 
-          <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
-          <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
+          I was a research student at SickKids, where I worked on building a 
+          simulation platform for robotic surgery. My focus was on connecting 
+          the physical robot to its virtual model, troubleshooting issues like 
+          synchronization delays and inverse kinematics mismatch, and testing 
+          how virtual fixtures could guide more precise bone cutting.
         </p>
       </div>
     </div>
-  </div>
 
-  <!-- Work & Research -->
-  <h2>💼 Work & Research</h2>
-
-  <div class="experience">
-    <img src="{{ site.baseurl }}/assets/img/sickkids_logo.png" alt="SickKids logo">
-    <div>
-      <h3>SickKids Hospital – Robotics Research Student</h3>
-      <p>
-        I was a research student at SickKids, building a simulation platform for robotic surgery. 
-        I connected the physical robot to its virtual model, addressed synchronization delays 
-        and inverse kinematics mismatches, and tested virtual fixtures to guide precise bone cutting.
-      </p>
+    <div class="experience">
+      <img src="{{ site.baseurl }}/assets/img/geotab_logo.png" alt="Geotab logo">
+      <div>
+        <h3>Geotab – Embedded Systems Developer</h3>
+        <p>
+          I was an embedded systems developer at Geotab, working on the 
+          firmware inside telematics devices used in fleet vehicles. I helped 
+          design and implement new features, contributed to system-level 
+          architecture, and built testing frameworks to make sure everything 
+          held up at production scale.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="experience">
-    <img src="{{ site.baseurl }}/assets/img/geotab_logo.png" alt="Geotab logo">
-    <div>
-      <h3>Geotab – Embedded Systems Developer</h3>
-      <p>
-        I worked on the firmware inside telematics devices for fleet vehicles, 
-        contributing to system-level architecture, implementing new features, 
-        and building testing frameworks to ensure production reliability.
-      </p>
+    <div class="experience">
+      <img src="{{ site.baseurl }}/assets/img/pmcrt_logo.png" alt="UHN logo">
+      <div>
+        <h3>University Health Network – Computational Analyst</h3>
+        <p>
+          I was a computational analyst at UHN, where I worked with a 
+          neuropathology lab to make large-scale data easier to use. I built 
+          custom analysis tools so lab members without a programming 
+          background could explore results independently, and I automated 
+          workflows to support ongoing healthcare research.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="experience">
-    <img src="{{ site.baseurl }}/assets/img/pmcrt_logo.png" alt="UHN logo">
-    <div>
-      <h3>University Health Network – Computational Analyst</h3>
-      <p>
-        I helped a neuropathology lab make large-scale data more accessible. 
-        I built analysis tools for non-programmers and automated workflows to support ongoing healthcare research.
-      </p>
+    <!-- Art -->
+    <h2>🎨 Art, Engineering and Creativity</h2>
+
+    <p>
+      Outside of engineering, I love exploring the ways art and technology overlap.
+      In one of my favorite projects, I turned well-known ODE equations into an art piece by visualizing their solutions as particle motion in creative ways
+      (you can read my full essay
+      <a href="{{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_Ordinary_Differential_Equations.pdf">here</a>).
+      I also loved my visit to teamLab Tokyo, where our hand-drawn sketches came to life on massive interactive screens.
+      I would love to explore more projects that blend art and technology.
+    </p>
+
+    <div class="art-gallery">
+      <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="ODE Project">
+      <img src="{{ site.baseurl }}/assets/img/teamlab_drawing.png" alt="TeamLab Drawing">
+      <img src="{{ site.baseurl }}/assets/img/drawing_tazhib.png" alt="Tazhib Drawing">
+      <img src="{{ site.baseurl }}/assets/img/drawing_bird.png" alt="Bird Drawing">
     </div>
-  </div>
 
-  <!-- Art Section -->
-  <h2>🎨 Art, Engineering and Creativity</h2>
-  <p>
-    I love exploring how <em>art and technology</em> intersect.  
-    One of my favorite projects was turning an <strong>ODE assignment</strong> into an art piece by visualizing particle motion
-    (you can read the full essay <a href="{{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_Ordinary_Differential_Equations.pdf">here</a>).  
-    I also visited <strong>teamLab Tokyo</strong>, where our hand-drawn sketches came to life on interactive screens.
-  </p>
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
 
-  <div class="art-gallery">
-    <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="ODE Project">
-    <img src="{{ site.baseurl }}/assets/img/teamlab_drawing.png" alt="TeamLab Drawing">
-    <img src="{{ site.baseurl }}/assets/img/drawing_tazhib.png" alt="Tazhib Drawing">
-    <img src="{{ site.baseurl }}/assets/img/drawing_bird.png" alt="Bird Drawing">
-  </div>
+    <!-- Contact -->
+    <h2>📫 Contact</h2>
+    <p>
+      📧 <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a><br>
+      💻 <a href="https://github.com/rayhanehb">GitHub</a><br>
+      💼 <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>
+    </p>
 
-  <!-- Lightbox overlay -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
-
-
+  </main>
 </div>
 
 <!-- Styles -->
 <style>
-.about-page {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(38,57,89,0.05);
-  line-height: 1.6;
-}
-
-.about-header {
-  margin-bottom: 40px;
-}
-
-.intro {
+.page-container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 25px;
-  max-width: 750px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
+/* Sidebar */
+.sidebar {
+  flex: 0 0 260px;
+  background: #f7f8fa;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(38,57,89,0.07);
+}
+
+.sidebar .cover-author-image img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 2px 6px rgba(38,57,89,0.08);
-  flex-shrink: 0;
+  display: block;
+  margin: 0 auto 12px;
 }
 
-.intro-text {
+.sidebar .author-name {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sidebar p {
+  text-align: center;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.sidebar .contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+  margin: 12px 0;
+}
+
+.content-box {
   flex: 1;
-  min-width: 250px;
+  max-width: 850px;
 }
 
-.intro-text h1 {
-  margin-top: 0;
-  margin-bottom: 0.4em;
-  font-size: 2em;
-  color: #263959;
-}
-.intro-text p {
-  margin: 0.5em 0;
-  font-size: 1.05em;
-  line-height: 1.6;
+/* Intro bubble */
+.intro-bubble {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(38,57,89,0.08);
 }
 
+/* Work experience */
 .experience {
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
-  flex-wrap: nowrap;
 }
 
 .experience img {
@@ -196,9 +212,10 @@ class: about-page
   box-shadow: 0 1px 3px rgba(38,57,89,0.1);
 }
 
+/* Art gallery */
 .art-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
   justify-items: center;
   margin: 24px 0;
@@ -215,11 +232,12 @@ class: about-page
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 .art-gallery img:hover {
   transform: scale(1.05);
 }
 
-/* Lightbox styles */
+/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -257,4 +275,24 @@ class: about-page
 <script>
 const galleryImages = document.querySelectorAll('.art-gallery img');
 const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.get
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+galleryImages.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+</script>
