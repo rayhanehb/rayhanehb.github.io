@@ -75,8 +75,14 @@ class: about-page
 ## 🎨 Art, Engineering and Creativity
 
 <p>
-  Outside of engineering, I love exploring the ways art and technology overlap. In one of my favorite projects, I turned well-known ODE equations into an art piece by visualizing their solutions as particle motion in creative ways (you can read my full essay [here]({{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_Ordinary_Differential_Equations.pdf)). I also loved my visit to teamLab Tokyo, where our hand-drawn sketches came to life on massive interactive screens. I would love to explore more projects that blend art and technology.
+  Outside of engineering, I love exploring the ways art and technology overlap.
+  In one of my favorite projects, I turned well-known ODE equations into an art piece by visualizing their solutions as particle motion in creative ways
+  (you can read my full essay
+  <a href="{{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_Ordinary_Differential_Equations.pdf">here</a>).
+  I also loved my visit to teamLab Tokyo, where our hand-drawn sketches came to life on massive interactive screens.
+  I would love to explore more projects that blend art and technology.
 </p>
+
 
 <div class="art-gallery">
   <img src="{{ site.baseurl }}/assets/img/ODE_annotated.png" alt="ODE Project">
