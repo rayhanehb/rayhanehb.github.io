@@ -37,7 +37,7 @@ The key lies in **eigenvalues**:
 
 - negative → spirals converge (stability)  
 - positive → trajectories explode outward (chaos)  
-- complex → motion bends, curls, and dances  
+- complex → complex eigenvalues produce oscillatory trajectories, where the real part controls damping and the imaginary part determines rotational frequency
 
 ---
 
@@ -73,9 +73,9 @@ the scientific elements here are intentional and visible.
 
 An ordinary differential equation, such as
 
-\[
-\frac{dx}{dt} + ax = b,
-\]
+$$
+\frac{dx}{dt} + a x = b
+$$
 
 can represent an electric circuit or a cooling process, depending on interpretation.  
 Likewise, the same simulation may evoke a physical or emotional system —  
@@ -93,14 +93,13 @@ This intersection — of form, function, and feeling — is where engineering be
 The theoretical foundation of *An Ode* is built on interpretations from **Plato**, **Aristotle**, **Susan Sontag**, and **Clement Greenberg**, extending to the ideas of **quantum art** and the **cosmic web**.
 
 ### Plato and Aristotle
-Plato saw art as *mimesis* — a reflection of ideal truths.  
+Plato saw art as *mimesis*, a reflection of ideal truths.  
 Here, ODE solutions act as visual manifestations of those truths: mathematical forms that express  
 the underlying order of the universe.  
 
 Aristotle, by contrast, valued art for its emotional engagement and catharsis.  
 In this context, the spiraling trajectories, convergences, and instabilities  
-become emotional experiences of harmony, chaos, or decay —  
-scientific yet affective, rational yet aesthetic.  
+become emotional experiences of harmony, chaos, or decay.  
 
 ### Susan Sontag
 Sontag argued for experiencing art without over-interpretation.  
@@ -110,22 +109,15 @@ not only as formal logic. Their beauty is accessible regardless of technical und
 ### Clement Greenberg
 Greenberg’s *Avant-Garde and Kitsch* distinction positions this project between the two.  
 Its conceptual depth and computational originality make it avant-garde,  
-yet its reproducibility through code hints at kitsch —  
+yet its reproducibility through code hints at kitsch, 
 challenging where digital art resides between uniqueness and automation.
-
-### Quantum Art and the Cosmic Web
-Finally, this work parallels the **quantum world** — probabilistic, interconnected, and ever-evolving.  
-Each simulation’s random matrix, color palette, and initialization reflect  
-a universe where outcomes are uncertain yet governed by precise laws.  
-The trajectories echo the **cosmic web** —  
-interconnected but distinct, unified by invisible equations that bind them together.
 
 ---
 ## Full Report
 
 For a deeper exploration of the ideas behind *An Ode*, including its artistic, philosophical, and scientific foundations, you can read the full report:
 
-[**Exploring Aesthetic Theory Through the Visual Representation of Ordinary Differential Equations (PDF)**]({{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_ODEs.pdf)
+[**Exploring Aesthetic Theory Through the Visual Representation of Ordinary Differential Equations (PDF)**]({{site.baseurl}}/assets/docs/Exploring_Aesthetic_Theory_Through_the_Visual_Representation_of_Ordinary_Differential_Equations.pdf)
 
 The report expands on:
 - The connection between **mathematical dynamics and visual aesthetics**
@@ -135,7 +127,7 @@ The report expands on:
 
 ---
 
-## Technical Deep Dive 🚀
+<!-- ## Technical Deep Dive 🚀
 
 This simulator is written in **Python**, using **NumPy** for math and **Pygame** for rendering.  
 
@@ -165,7 +157,7 @@ Together, these simple rules create complex, evolving artwork.
 
 For full code and details, visit the [GitHub repository](https://github.com/yourusername/ODEArt).
 
----
+--- -->
 
 ## Closing
 
