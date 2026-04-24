@@ -23,7 +23,7 @@ The robot is a 7-DOF Franka Emika Research 3 (FR3) arm fitted with a custom mult
 - **Controller Inhibition:** The physical robot's ROS controller subscribes to `/contact_status` and blocks any motion command that would violate the virtual fixture boundary
 
 <div style="text-align:center;">
-  <img src="{{site.baseurl}}/assets/img/thesis_existngarch.png" alt="Existing System Architecture" style="width:70%;" />
+  <img src="{{site.baseurl}}/assets/img/thesis_exisitngarch.png" alt="Existing System Architecture" style="width:70%;" />
   <p style="font-style:italic; margin-top:10px;">Existing system architecture</p>
 </div>
 
