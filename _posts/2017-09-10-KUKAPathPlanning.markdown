@@ -17,7 +17,7 @@ The robotic arm was tasked with **tracing a jug** using inverse kinematics. By s
 - **Forward Kinematics**: First, the position of the end effector was determined from the joint angles.
 - **Inverse Kinematics**: The arm solved for joint angles corresponding to a desired end effector position, allowing it to trace the outline of the jug precisely.
 
-![Robotic Arm Tracing Jug]({{site.baseurl}}/assets/img/kuka_jug.png)
+<!-- ![Robotic Arm Tracing Jug]({{site.baseurl}}/assets/img/kuka_jug.png) -->
 <img src="{{site.baseurl}}/assets/img/kuka_jug.png" alt="Simulation" style="width:40%;" />
 
 The algorithm ensured smooth motion and precise placement of the arm at each point along the jug’s outline, allowing for detailed tracing. The robotic arm adapted to each segment of the jug's curve, ensuring an accurate representation of the shape.
