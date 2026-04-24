@@ -3,7 +3,7 @@ layout: post
 title: Enhancing Safety in Surgical Robotics Using Virtual Fixtures
 date: 2025-04-08 12:00:00
 description: Unity-based digital twin simulation framework for real-time collision detection and motion inhibition in robotic bone cutting.
-img: surgical_robotics_gpt.png
+img: thesis_cover.png
 fig-caption: Unity-ROS Surgical Robotics Simulation
 tags: [Surgical Robotics, Unity, ROS, Digital Twin, Virtual Fixtures, Safety]
 ---
@@ -23,7 +23,7 @@ The robot is a 7-DOF Franka Emika Research 3 (FR3) arm fitted with a custom mult
 - **Controller Inhibition:** The physical robot's ROS controller subscribes to `/contact_status` and blocks any motion command that would violate the virtual fixture boundary
 
 <div style="text-align:center;">
-  <img src="{{site.baseurl}}/assets/img/thesis_existingarch.png" alt="Existing System Architecture" style="width:70%;" />
+  <img src="{{site.baseurl}}/assets/img/thesis_existngarch.png" alt="Existing System Architecture" style="width:70%;" />
   <p style="font-style:italic; margin-top:10px;">Existing system architecture</p>
 </div>
 
