@@ -45,7 +45,7 @@ class: about-page
         and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
       </p>
       <p>
-        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
+        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. Feel free to reach out! 
         Feel free to reach out! 
       </p>
     </div>
