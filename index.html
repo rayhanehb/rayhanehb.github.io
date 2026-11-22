@@ -2,23 +2,20 @@
 layout: main
 ---
 
-<div class="about-header">
-  <div class="intro-bubble">
-    <div class="intro-text">
-      <h1>Hi, I’m Rayhaneh 👋</h1>
-      <p>
-        I’m currently a graduate student in <strong>Robotics at Johns Hopkins University</strong>, 
-        and I completed my <strong>Engineering Science degree at the University of Toronto</strong>. 
-      </p>
-      <p>
-        I enjoy meeting people who share interests in robotics, art, or just fun ideas in general. 
-        Feel free to reach out! You can email me at 
-        <a href="mailto:rayhaneh.behravesh@gmail.com">rayhaneh.behravesh@gmail.com</a> or connect with me on 
-        <a href="https://www.linkedin.com/in/r-behravesh">LinkedIn</a>.
-      </p>
-    </div>
+{% if paginator.page == 1 %}
+<article class="post">
+  <a class="post-thumbnail joint-thumbnail" href="{{site.baseurl}}/touch-prediction/" aria-label="Touch prediction preview: tactile, segmentation, and pose side by side">
+    <span class="joint-panel joint-tactile"><span>Tactile</span></span>
+    <span class="joint-panel joint-segmentation"><span>Segmentation</span></span>
+    <span class="joint-panel joint-pose"><span>Pose</span></span>
+  </a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{site.baseurl}}/touch-prediction/">Tactile Synthesis from Repurposed Video Diffusion</a></h2>
+    <p>Joint prediction of tactile pressure, hand pose, and hand–object segmentation from first-person video.</p>
+    <span class="post-date">2026, Nov 22</span>
   </div>
-</div>
+</article>
+{% endif %}
 
 {% for post in paginator.posts %}
 <article class="post">
@@ -37,38 +34,10 @@ layout: main
 {% include pagination.html %}
 
 <style>
-/* Intro bubble styling */
-.intro-bubble {
-  max-width: 850px; /* same as posts container */
-  margin: 40px auto;
-  padding: 28px 32px;
-  background: #ffffff; /* clean white */
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(38, 57, 89, 0.06); /* subtle shadow */
-  text-align: left;
-  border: 1px solid rgba(38, 57, 89, 0.08); /* faint border */
-}
-
-.intro-bubble h1 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-size: 2em;
-  color: #263959;
-}
-
-.intro-bubble p {
-  margin: 0.6em 0;
-  font-size: 1.05em;
-  line-height: 1.6;
-}
-
-.intro-bubble a {
-  color: #4f9fcf;
-  text-decoration: none;
-}
-.intro-bubble a:hover {
-  text-decoration: underline;
-}
-
-/* Existing post styles (if you have any) would stay the same */
+.post .joint-thumbnail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));min-height:11rem;overflow:hidden;background:#fff}
+.joint-thumbnail .joint-panel{position:relative;min-width:0;background-image:url({{site.baseurl}}/touch-prediction/assets/joint/0009.jpg);background-repeat:no-repeat;background-size:500% 100%}
+.joint-thumbnail .joint-tactile{background-position:50% 0}
+.joint-thumbnail .joint-segmentation{background-position:75% 0}
+.joint-thumbnail .joint-pose{background-position:100% 0}
+.joint-thumbnail .joint-panel span{position:absolute;left:3px;right:3px;bottom:6px;padding:2px 3px;border-radius:3px;background:rgba(255,255,255,.88);color:#343747;font:600 10px Lato,Arial,sans-serif;text-align:center}
 </style>

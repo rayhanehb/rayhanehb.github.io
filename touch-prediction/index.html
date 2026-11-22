@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Predicting tactile, hand configuration, and hand–object segmentation from egocentric RGB video with a pretrained video diffusion model.">
+<meta name="theme-color" content="#ffffff"><title>Tactile Synthesis from Repurposed Video Diffusion</title>
+<link rel="icon" href="assets/images/tactile.png"><link rel="stylesheet" href="styles.css">
+<script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#overview">Skip to content</a>
+<div class="return-row wrap"><a href="../">Back to portfolio</a></div>
+<main>
+<section class="hero wrap" id="overview">
+<div class="hero-intro">
+  <h1><span>Tactile Synthesis</span><br>from Repurposed <em>Video Diffusion</em></h1>
+  <p class="research-motivation">As part of my research at Johns Hopkins University, I explored a way to scale tactile data by predicting it from the much larger supply of first-person videos. Tactile measurements require specialized sensors, while videos of hands interacting with objects are abundant. Because pretrained video generators learn patterns of physical interaction from video, we tested whether one could be adapted to predict tactile pressure. We fine-tuned the model on RGB videos paired with tactile measurements, then used RGB alone to generate pressure maps over time. We also extended the model to jointly predict hand pose and hand–object segmentation. I was supervised by Dr. Anand Bhattad, Dr. Homanga Bharadhwaj, and Dr. Gregory Hager.</p>
+</div>
+<div class="stitched-showcase" aria-label="Stitched video examples">
+  <article class="stitched-slot stitched-slot-ego"><div class="slot-frame"><video src="assets/stitched/egotouch.mp4" poster="assets/stitched/egotouch.jpg" aria-label="EgoTouch stitched RGB and left and right tactile video" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div><h2>EgoTouch</h2></article>
+  <article class="stitched-slot stitched-slot-joint"><div class="slot-frame"><video src="assets/joint/0009.mp4" poster="assets/joint/0009.jpg" aria-label="OpenTouch joint prediction showing RGB, tactile pressure, hand-object segmentation, and hand pose" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div><h2>OpenTouch joint prediction</h2></article>
+</div>
+</section>
+<section class="method-section" id="method"><div class="wrap section">
+<div class="section-heading"><div><h2>Method overview</h2></div><p>Joint generation of tactile, hand configuration, and hand–object segmentation from RGB video.</p></div>
+<p class="method-summary">We fine-tuned Wan2.1-Fun-Control with LoRA while keeping its base weights frozen. The model learns from paired RGB video and tactile measurements, then predicts tactile pressure maps from RGB alone. We also explored jointly predicting hand configuration and hand–object segmentation.</p>
+<figure class="source-pipeline"><a href="assets/images/pipeline-powerpoint.png" target="_blank" rel="noopener" aria-label="Open the original pipeline figure at full size"><img src="assets/images/pipeline-powerpoint.png" alt="PowerPoint pipeline figure: target streams and RGB conditioning enter the Wan Encoder; target latents are concatenated in height, noised, joined with RGB along channels, patchified, processed by Wan-DiT with LoRA, and decoded into output streams." loading="lazy"></a><figcaption><a href="assets/images/pipeline-powerpoint.png" target="_blank" rel="noopener">View figure at full size ↗</a></figcaption></figure>
+</div></section>
+<section class="section wrap" id="gallery">
+<div class="section-heading"><div><h2>Examples</h2></div><p>Held-out OpenTouch</p></div>
+<div class="comparison-grid" id="comparison-grid"></div>
+
+<p class="viewer-note" id="viewer-note">Tactile activity is rendered on a static hand. Brighter regions indicate greater tactile activity.</p>
+<div class="thumbnail-heading"><span>Choose an interaction</span><span id="sequence-count">10 sequences</span></div><div class="thumbnails" id="thumbnails" role="group" aria-label="Choose a video sequence"></div>
+</section>
+<section class="joint-section" id="joint"><div class="wrap section">
+  <div class="section-heading"><div><h2>Joint Prediction</h2></div><p>Four stitched examples showing RGB video alongside the predicted output streams.</p></div>
+  <div class="joint-grid" aria-label="Four stitched joint prediction videos">
+    <div class="joint-slot"><div class="joint-slot-frame"><video src="assets/joint/0043.mp4" poster="assets/joint/0043.jpg" aria-label="Joint prediction sequence 0043" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></div>
+    <div class="joint-slot"><div class="joint-slot-frame"><video src="assets/joint/0009.mp4" poster="assets/joint/0009.jpg" aria-label="Joint prediction sequence 0009" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></div>
+    <div class="joint-slot"><div class="joint-slot-frame"><video src="assets/joint/0038.mp4" poster="assets/joint/0038.jpg" aria-label="Joint prediction sequence 0038" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></div>
+    <div class="joint-slot"><div class="joint-slot-frame"><video src="assets/joint/0032.mp4" poster="assets/joint/0032.jpg" aria-label="Joint prediction sequence 0032" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></div>
+  </div>
+</div></section>
+<section class="section wrap" id="bimanual"><div class="section-heading"><div><h2>Two Hands Generation</h2></div><p>EgoTouch examples with left- and right-hand tactile predictions.</p></div>
+<div class="joint-grid bimanual-grid" aria-label="Four two-hand generation videos">
+  <article class="joint-slot"><div class="joint-slot-frame"><video src="assets/bimanual/0061.mp4" poster="assets/bimanual/0061.jpg" aria-label="EgoTouch: Picking up a pen and writing" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></article>
+  <article class="joint-slot"><div class="joint-slot-frame"><video src="assets/bimanual/0006.mp4" poster="assets/bimanual/0006.jpg" aria-label="EgoTouch: Rotating a table clamp" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></article>
+  <article class="joint-slot"><div class="joint-slot-frame"><video src="assets/bimanual/0128.mp4" poster="assets/bimanual/0128.jpg" aria-label="EgoTouch: Opening a package bag" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></article>
+  <article class="joint-slot"><div class="joint-slot-frame"><video src="assets/bimanual/0081.mp4" poster="assets/bimanual/0081.jpg" aria-label="EgoTouch: Putting back a ping-pong paddle" autoplay muted loop playsinline preload="metadata"></video><div class="row-labels" aria-label="Video row labels"><span>Generated</span><span>GT</span></div></div></article>
+</div></section>
+
+<section class="section wrap overunder-section" id="overunder">
+  <div class="section-heading"><div><h2>Over- and underprediction</h2></div><p>Compare generated tactile with ground truth and inspect where they differ.</p></div>
+  <div class="error-legend" aria-label="Difference map legend"><span><i class="error-swatch over"></i>Red: generated tactile overpredicts</span><span><i class="error-swatch under"></i>Blue: generated tactile underpredicts</span></div>
+  <p class="overunder-scroll-note">Swipe each video sideways to see the difference maps.</p>
+  <div class="overunder-list" aria-label="Five over- and underprediction examples">
+    <article class="overunder-example" aria-label="Over- and underprediction example 1"><div class="overunder-viewport"><div class="overunder-media"><div class="overunder-headings" aria-hidden="true"><span>RGB input</span><span>Tactile</span><span>Intensity difference</span><span>Location difference</span></div><div class="overunder-frame"><video src="assets/overunder/0043.mp4" poster="assets/overunder/0043.jpg" aria-label="Example 1: RGB input, generated and ground-truth tactile, intensity difference, and location difference" autoplay muted loop playsinline preload="metadata"></video><span class="tactile-overlay generated">Gen</span><span class="tactile-overlay ground-truth">GT</span></div></div></div></article>
+    <article class="overunder-example" aria-label="Over- and underprediction example 2"><div class="overunder-viewport"><div class="overunder-media"><div class="overunder-headings" aria-hidden="true"><span>RGB input</span><span>Tactile</span><span>Intensity difference</span><span>Location difference</span></div><div class="overunder-frame"><video src="assets/overunder/0038.mp4" poster="assets/overunder/0038.jpg" aria-label="Example 2: RGB input, generated and ground-truth tactile, intensity difference, and location difference" autoplay muted loop playsinline preload="metadata"></video><span class="tactile-overlay generated">Gen</span><span class="tactile-overlay ground-truth">GT</span></div></div></div></article>
+    <article class="overunder-example" aria-label="Over- and underprediction example 3"><div class="overunder-viewport"><div class="overunder-media"><div class="overunder-headings" aria-hidden="true"><span>RGB input</span><span>Tactile</span><span>Intensity difference</span><span>Location difference</span></div><div class="overunder-frame"><video src="assets/overunder/0032.mp4" poster="assets/overunder/0032.jpg" aria-label="Example 3: RGB input, generated and ground-truth tactile, intensity difference, and location difference" autoplay muted loop playsinline preload="metadata"></video><span class="tactile-overlay generated">Gen</span><span class="tactile-overlay ground-truth">GT</span></div></div></div></article>
+    <article class="overunder-example" aria-label="Over- and underprediction example 4"><div class="overunder-viewport"><div class="overunder-media"><div class="overunder-headings" aria-hidden="true"><span>RGB input</span><span>Tactile</span><span>Intensity difference</span><span>Location difference</span></div><div class="overunder-frame"><video src="assets/overunder/0009.mp4" poster="assets/overunder/0009.jpg" aria-label="Example 4: RGB input, generated and ground-truth tactile, intensity difference, and location difference" autoplay muted loop playsinline preload="metadata"></video><span class="tactile-overlay generated">Gen</span><span class="tactile-overlay ground-truth">GT</span></div></div></div></article>
+    <article class="overunder-example" aria-label="Over- and underprediction example 5"><div class="overunder-viewport"><div class="overunder-media"><div class="overunder-headings" aria-hidden="true"><span>RGB input</span><span>Tactile</span><span>Intensity difference</span><span>Location difference</span></div><div class="overunder-frame"><video src="assets/overunder/0005.mp4" poster="assets/overunder/0005.jpg" aria-label="Example 5: RGB input, generated and ground-truth tactile, intensity difference, and location difference" autoplay muted loop playsinline preload="metadata"></video><span class="tactile-overlay generated">Gen</span><span class="tactile-overlay ground-truth">GT</span></div></div></div></article>
+  </div>
+</section>
+
+</main><footer class="wrap"><a class="wordmark" href="../">Portfolio</a><p>Tactile Synthesis from Repurposed Video Diffusion</p><a href="#overview">Back to top ↑</a></footer>
+<noscript><p class="wrap">Enable JavaScript to explore the OpenTouch comparison gallery. The figures remain available.</p></noscript>
+</body></html>
